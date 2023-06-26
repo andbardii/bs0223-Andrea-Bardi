@@ -1,0 +1,26 @@
+package com.epicode;
+
+public class Main_Project {
+
+	public static void main(String[] args) {
+		// (Commento singola linea)
+		
+		/*
+		 * (Commenti multi linea)
+		 * PRIMA LEZIONE, JAVA BASICS
+		 */
+		/**
+		 * @author Andrea Bardi
+		 * (Commenti per la Documentazione del file)
+		 */
+
+		// TIPI DI DATO
+		boolean b = true;
+		char c = 'c'; // apici singoli + singola lettera
+		int i = 25;
+		String s = "ciao"; // apici doppi + più lettere
+		
+		
+	}
+
+}
