@@ -60,3 +60,22 @@
 16:17:58.170 [main] INFO  com.esercizio.tre.app.Banca - Saldo conto: 20000.0
 16:17:58.173 [main] INFO  com.esercizio.tre.app.Banca - Saldo conto: 18249.5
 16:17:58.174 [main] ERROR com.esercizio.tre.app.Banca - Errore durante il prelievo: Il prelievo non è disponibile
+16:31:40.085 [main] INFO  com.esercizio.tre.app.Banca - Saldo conto: 20000.0
+16:31:40.089 [main] INFO  com.esercizio.tre.app.Banca - Saldo conto: 18249.5
+16:31:40.089 [main] ERROR com.esercizio.tre.app.Banca - Errore durante il prelievo: Il prelievo non è disponibile
+16:51:02.918 [main] INFO  com.esercizio.tre.app.Banca - Saldo conto: 20000.0
+16:51:02.921 [main] INFO  com.esercizio.tre.app.Banca - Saldo conto: 18249.5
+16:51:02.921 [main] ERROR com.esercizio.tre.app.Banca - Errore durante il prelievo: Il prelievo non è disponibile
+16:51:27.655 [main] INFO  com.esercizio.tre.app.Banca - Saldo conto: 20000.0
+16:51:27.658 [main] INFO  com.esercizio.tre.app.Banca - Saldo conto: 18249.5
+16:52:43.069 [main] INFO  com.esercizio.tre.app.Banca - Saldo conto: 20000.0
+16:52:43.071 [main] INFO  com.esercizio.tre.app.Banca - Saldo conto: 18249.5
+16:53:07.847 [main] INFO  com.esercizio.tre.app.Banca - Saldo conto: 20000.0
+16:53:07.850 [main] INFO  com.esercizio.tre.app.Banca - Saldo conto: 18249.5
+16:54:50.989 [main] INFO  com.esercizio.tre.app.Banca - Saldo conto: 20000.0
+16:54:50.992 [main] INFO  com.esercizio.tre.app.Banca - Saldo conto: 18249.5
+16:55:13.447 [main] INFO  com.esercizio.tre.app.Banca - Saldo conto: 20000.0
+16:55:13.450 [main] INFO  com.esercizio.tre.app.Banca - Saldo conto: 18249.5
+16:55:50.901 [main] INFO  com.esercizio.tre.app.Banca - Saldo conto: 20000.0
+16:55:50.903 [main] INFO  com.esercizio.tre.app.Banca - Saldo conto: 18249.5
+16:55:50.904 [main] ERROR com.esercizio.tre.app.Banca - Errore durante il prelievo: Il prelievo non è disponibile

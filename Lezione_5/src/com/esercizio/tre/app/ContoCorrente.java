@@ -20,7 +20,7 @@ public class ContoCorrente {
 				saldo = saldo - x;
 			}
 		}else {
-			if (saldo - x < 0) {
+			if (saldo - x - 0.50 < 0) {
 				throw new BancaException("Il conto è in rosso!");
 			}else {
 				saldo = saldo - x -0.50;
