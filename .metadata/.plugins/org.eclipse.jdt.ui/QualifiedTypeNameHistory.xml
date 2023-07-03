@@ -2,6 +2,14 @@
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="com.epicode.classes.Rettangolo"/>
     <fullyQualifiedTypeName name="esercizio1.Rettangolo"/>
-    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="com.iterfaces.app.Playable"/>
+    <fullyQualifiedTypeName name="com.iterfaces.app.Bright"/>
+    <fullyQualifiedTypeName name="com.classes.app.Video"/>
+    <fullyQualifiedTypeName name="com.classes.app.Audio"/>
+    <fullyQualifiedTypeName name="com.classes.app.Image"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="com.classes.app.Multimedia"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
 </qualifiedTypeNameHistroy>
