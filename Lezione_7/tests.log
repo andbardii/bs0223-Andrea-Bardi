@@ -1,0 +1,275 @@
+14:25:01.812 [main] INFO  com.esercizio.due.app.MainUno - Insersici il numero di parole: 
+14:25:05.062 [main] INFO  com.esercizio.due.app.MainUno - Insersici parola n° 01: 
+14:25:56.254 [main] INFO  com.esercizio.due.app.MainUno - Insersici il numero di parole: 
+14:26:12.052 [main] INFO  com.esercizio.due.app.MainUno - Insersici parola: 
+14:27:46.145 [main] INFO  com.esercizio.due.app.MainUno - Insersici il numero di parole: 
+14:27:48.878 [main] INFO  com.esercizio.due.app.MainUno - Insersici parola: 
+14:28:52.306 [main] INFO  com.esercizio.due.app.MainUno - Insersici il numero di parole: 
+14:28:54.191 [main] INFO  com.esercizio.due.app.MainUno - Insersici parola: 
+14:30:14.789 [main] INFO  com.esercizio.due.app.MainUno - Insersici il numero di parole: 
+14:30:19.880 [main] INFO  com.esercizio.due.app.MainUno - Insersici parola: 
+14:31:28.216 [main] INFO  com.esercizio.due.app.MainUno - Insersici il numero di parole: 
+14:31:31.504 [main] INFO  com.esercizio.due.app.MainUno - Insersici parola: 
+14:32:13.010 [main] INFO  com.esercizio.due.app.MainUno - Insersici il numero di parole: 
+14:32:15.037 [main] INFO  com.esercizio.due.app.MainUno - Insersici parola: 
+14:35:13.376 [main] INFO  com.esercizio.due.app.MainUno - Insersici il numero di parole: 
+14:35:14.080 [main] INFO  com.esercizio.due.app.MainUno - Insersici il numero di parole: 
+14:35:17.756 [main] INFO  com.esercizio.due.app.MainUno - Insersici parola: 
+14:35:41.507 [main] INFO  com.esercizio.due.app.MainUno - Insersici il numero di parole: 
+14:35:45.965 [main] INFO  com.esercizio.due.app.MainUno - Insersici il numero di parole: 
+14:35:47.768 [main] INFO  com.esercizio.due.app.MainUno - Insersici parola: 
+14:37:24.655 [main] INFO  com.esercizio.due.app.MainUno - Insersici il numero di parole: 
+14:37:26.959 [main] INFO  com.esercizio.due.app.MainUno - Insersici parola: 
+14:37:29.046 [main] INFO  com.esercizio.due.app.MainUno - Insersici parola: 
+14:38:37.166 [main] INFO  com.esercizio.due.app.MainUno - Insersici il numero di parole: 
+14:38:39.438 [main] INFO  com.esercizio.due.app.MainUno - Insersici parola: 
+14:38:40.860 [main] INFO  com.esercizio.due.app.MainUno - Insersici parola: 
+14:39:55.161 [main] INFO  com.esercizio.due.app.MainUno - Insersici il numero di parole: 
+14:39:57.023 [main] INFO  com.esercizio.due.app.MainUno - Insersici parola: 
+14:40:32.760 [main] INFO  com.esercizio.due.app.MainUno - Insersici il numero di parole: 
+14:40:35.112 [main] INFO  com.esercizio.due.app.MainUno - Insersici parola: 
+14:41:10.727 [main] INFO  com.esercizio.due.app.MainUno - Insersici il numero di parole: 
+14:41:13.944 [main] INFO  com.esercizio.due.app.MainUno - Insersici parola: 
+14:45:18.479 [main] INFO  com.esercizio.due.app.MainUno - Insersici il numero di parole: 
+14:45:20.996 [main] INFO  com.esercizio.due.app.MainUno - Insersici parola: 
+14:48:35.516 [main] INFO  com.esercizio.due.app.MainUno - Insersici il numero di parole: 
+14:48:37.692 [main] INFO  com.esercizio.due.app.MainUno - Insersici parola: 
+14:48:44.419 [main] INFO  com.esercizio.due.app.MainUno - Insersici parola: 
+14:48:56.162 [main] INFO  com.esercizio.due.app.MainUno - Insersici parola: 
+14:49:05.840 [main] INFO  com.esercizio.due.app.MainUno - Ottimo, non ci sono parole duplicate!
+14:49:05.840 [main] INFO  com.esercizio.due.app.MainUno - 3 Parole uninche: 
+14:49:05.840 [main] INFO  com.esercizio.due.app.MainUno - Parola: sassretto
+14:49:05.840 [main] INFO  com.esercizio.due.app.MainUno - Parola: dimare
+14:49:05.841 [main] INFO  com.esercizio.due.app.MainUno - Parola: la
+14:50:06.948 [main] INFO  com.esercizio.due.app.MainUno - Insersici il numero di parole: 
+14:50:10.209 [main] INFO  com.esercizio.due.app.MainUno - Insersici parola: 
+14:50:26.223 [main] INFO  com.esercizio.due.app.MainUno - Insersici parola: 
+14:50:32.818 [main] INFO  com.esercizio.due.app.MainUno - Insersici parola: 
+14:50:43.465 [main] INFO  com.esercizio.due.app.MainUno - Ottimo, non ci sono parole duplicate!
+14:50:43.465 [main] INFO  com.esercizio.due.app.MainUno - 3 Parole uninche: 
+14:50:43.466 [main] INFO  com.esercizio.due.app.MainUno - Parola: sassari
+14:50:43.466 [main] INFO  com.esercizio.due.app.MainUno - Parola: yellow
+14:50:43.466 [main] INFO  com.esercizio.due.app.MainUno - Parola: olmo
+14:56:46.116 [main] INFO  com.esercizio.due.app.MainUno - Insersici il numero di parole: 
+14:56:48.331 [main] INFO  com.esercizio.due.app.MainUno - Insersici parola: 
+14:56:52.508 [main] INFO  com.esercizio.due.app.MainUno - Insersici parola: 
+14:56:57.831 [main] INFO  com.esercizio.due.app.MainUno - Insersici parola: 
+14:57:00.994 [main] INFO  com.esercizio.due.app.MainUno - Parola: pesce
+14:57:00.994 [main] INFO  com.esercizio.due.app.MainUno - 2 Parole uninche: 
+14:57:00.994 [main] INFO  com.esercizio.due.app.MainUno - Parola: pesce
+14:57:00.995 [main] INFO  com.esercizio.due.app.MainUno - Parola: cane
+14:57:54.656 [main] INFO  com.esercizio.due.app.MainUno - Insersici il numero di parole: 
+14:57:58.927 [main] INFO  com.esercizio.due.app.MainUno - Insersici parola: 
+14:58:03.482 [main] INFO  com.esercizio.due.app.MainUno - Insersici parola: 
+14:58:06.497 [main] INFO  com.esercizio.due.app.MainUno - Insersici parola: 
+14:58:10.585 [main] INFO  com.esercizio.due.app.MainUno - Parola: cane
+14:58:10.585 [main] INFO  com.esercizio.due.app.MainUno - Parola: gatto
+14:58:10.586 [main] INFO  com.esercizio.due.app.MainUno - 1 Parole uninche: 
+14:58:10.586 [main] INFO  com.esercizio.due.app.MainUno - Parola: pesce
+14:58:55.612 [main] INFO  com.esercizio.due.app.MainUno - Insersici il numero di parole: 
+14:58:57.473 [main] INFO  com.esercizio.due.app.MainUno - Insersici parola: 
+14:59:02.165 [main] INFO  com.esercizio.due.app.MainUno - Insersici parola: 
+14:59:05.251 [main] INFO  com.esercizio.due.app.MainUno - Insersici parola: 
+14:59:08.264 [main] INFO  com.esercizio.due.app.MainUno - Ottimo, non ci sono parole duplicate!
+14:59:08.264 [main] INFO  com.esercizio.due.app.MainUno - 3 Parole uninche: 
+14:59:08.265 [main] INFO  com.esercizio.due.app.MainUno - Parola: cane
+14:59:08.265 [main] INFO  com.esercizio.due.app.MainUno - Parola: gatto
+14:59:08.265 [main] INFO  com.esercizio.due.app.MainUno - Parola: albero
+14:59:14.769 [main] INFO  com.esercizio.due.app.MainUno - Insersici il numero di parole: 
+14:59:18.319 [main] INFO  com.esercizio.due.app.MainUno - Insersici parola: 
+14:59:24.167 [main] INFO  com.esercizio.due.app.MainUno - Insersici parola: 
+14:59:30.715 [main] INFO  com.esercizio.due.app.MainUno - Insersici parola: 
+14:59:35.007 [main] INFO  com.esercizio.due.app.MainUno - Ottimo, non ci sono parole duplicate!
+14:59:35.007 [main] INFO  com.esercizio.due.app.MainUno - 2 Parole uninche: 
+14:59:35.007 [main] INFO  com.esercizio.due.app.MainUno - Parola: pesce
+14:59:35.007 [main] INFO  com.esercizio.due.app.MainUno - Parola: cane
+15:02:18.246 [main] INFO  com.esercizio.due.app.MainUno - Insersici il numero di parole: 
+15:02:25.869 [main] INFO  com.esercizio.due.app.MainUno - Insersici il numero di parole: 
+15:02:27.672 [main] INFO  com.esercizio.due.app.MainUno - Insersici parola: 
+15:02:31.025 [main] INFO  com.esercizio.due.app.MainUno - Insersici parola: 
+15:02:39.636 [main] INFO  com.esercizio.due.app.MainUno - Parole duplicate: 
+15:02:39.637 [main] INFO  com.esercizio.due.app.MainUno - Parola: cane
+15:02:39.637 [main] INFO  com.esercizio.due.app.MainUno - 1 Parole uninche: 
+15:02:39.637 [main] INFO  com.esercizio.due.app.MainUno - Parola: cane
+15:06:05.870 [main] INFO  com.esercizio.due.app.MainUno - Insersici il numero di parole: 
+15:06:07.381 [main] INFO  com.esercizio.due.app.MainUno - Insersici parola: 
+15:06:11.239 [main] INFO  com.esercizio.due.app.MainUno - Insersici parola: 
+15:06:15.102 [main] INFO  com.esercizio.due.app.MainUno - Insersici parola: 
+15:06:26.939 [main] INFO  com.esercizio.due.app.MainUno - Parole duplicate: 
+15:06:26.939 [main] INFO  com.esercizio.due.app.MainUno - Parola: pesce
+15:06:26.940 [main] INFO  com.esercizio.due.app.MainUno - Parola: cane
+15:06:26.940 [main] INFO  com.esercizio.due.app.MainUno - 3 Parole uninche: 
+15:06:26.940 [main] INFO  com.esercizio.due.app.MainUno - Parola: andre
+15:06:26.940 [main] INFO  com.esercizio.due.app.MainUno - Parola: pesce
+15:06:26.940 [main] INFO  com.esercizio.due.app.MainUno - Parola: cane
+15:07:53.491 [main] INFO  com.esercizio.due.app.MainUno - Insersici il numero di parole: 
+15:07:55.060 [main] INFO  com.esercizio.due.app.MainUno - Insersici parola: 
+15:07:57.952 [main] INFO  com.esercizio.due.app.MainUno - Insersici parola: 
+15:08:01.660 [main] INFO  com.esercizio.due.app.MainUno - Insersici parola: 
+15:08:05.939 [main] INFO  com.esercizio.due.app.MainUno - Parole duplicate: 
+15:08:05.940 [main] INFO  com.esercizio.due.app.MainUno - Parola: andre
+15:08:05.940 [main] INFO  com.esercizio.due.app.MainUno - Parola: lori
+15:08:05.940 [main] INFO  com.esercizio.due.app.MainUno - Parola: pesce
+15:08:05.940 [main] INFO  com.esercizio.due.app.MainUno - 3 Parole uninche: 
+15:08:05.940 [main] INFO  com.esercizio.due.app.MainUno - Parola: andre
+15:08:05.940 [main] INFO  com.esercizio.due.app.MainUno - Parola: lori
+15:08:05.940 [main] INFO  com.esercizio.due.app.MainUno - Parola: pesce
+15:10:30.295 [main] INFO  com.esercizio.due.app.MainUno - Insersici il numero di parole: 
+15:10:32.023 [main] INFO  com.esercizio.due.app.MainUno - Insersici parola: 
+15:10:33.735 [main] INFO  com.esercizio.due.app.MainUno - Insersici parola: 
+15:10:34.841 [main] INFO  com.esercizio.due.app.MainUno - Insersici parola: 
+15:10:36.231 [main] INFO  com.esercizio.due.app.MainUno - Ottimo, non ci sono parole duplicate!
+15:10:36.231 [main] INFO  com.esercizio.due.app.MainUno - 3 Parole uninche: 
+15:10:36.231 [main] INFO  com.esercizio.due.app.MainUno - Parola: dasdas
+15:10:36.231 [main] INFO  com.esercizio.due.app.MainUno - Parola: dsadas
+15:10:36.231 [main] INFO  com.esercizio.due.app.MainUno - Parola: dsad
+15:10:52.758 [main] INFO  com.esercizio.due.app.MainUno - Insersici il numero di parole: 
+15:10:54.440 [main] INFO  com.esercizio.due.app.MainUno - Insersici parola: 
+15:10:57.947 [main] INFO  com.esercizio.due.app.MainUno - Insersici parola: 
+15:11:36.231 [main] INFO  com.esercizio.due.app.MainUno - Insersici il numero di parole: 
+15:11:40.892 [main] INFO  com.esercizio.due.app.MainUno - Insersici il numero di parole: 
+15:11:43.803 [main] INFO  com.esercizio.due.app.MainUno - Insersici parola: 
+15:11:48.480 [main] INFO  com.esercizio.due.app.MainUno - Insersici parola: 
+15:11:50.946 [main] INFO  com.esercizio.due.app.MainUno - Insersici parola: 
+15:11:52.531 [main] INFO  com.esercizio.due.app.MainUno - Ottimo, non ci sono parole duplicate!
+15:11:52.531 [main] INFO  com.esercizio.due.app.MainUno - 3 Parole uninche: 
+15:11:52.532 [main] INFO  com.esercizio.due.app.MainUno - Parola: saaaas
+15:11:52.532 [main] INFO  com.esercizio.due.app.MainUno - Parola: saas
+15:11:52.532 [main] INFO  com.esercizio.due.app.MainUno - Parola: saaas
+15:12:04.245 [main] INFO  com.esercizio.due.app.MainUno - Insersici il numero di parole: 
+15:12:15.068 [main] INFO  com.esercizio.due.app.MainUno - Insersici parola: 
+15:12:16.619 [main] INFO  com.esercizio.due.app.MainUno - Insersici parola: 
+15:12:20.720 [main] INFO  com.esercizio.due.app.MainUno - Insersici parola: 
+15:12:39.358 [main] INFO  com.esercizio.due.app.MainUno - Parole duplicate: 
+15:12:39.359 [main] INFO  com.esercizio.due.app.MainUno - Parola: saas
+15:12:39.359 [main] INFO  com.esercizio.due.app.MainUno - 2 Parole uninche: 
+15:12:39.359 [main] INFO  com.esercizio.due.app.MainUno - Parola: saas
+15:12:39.359 [main] INFO  com.esercizio.due.app.MainUno - Parola: saaas
+15:13:01.261 [main] INFO  com.esercizio.due.app.MainUno - Insersici il numero di parole: 
+15:13:04.188 [main] INFO  com.esercizio.due.app.MainUno - Insersici parola: 
+15:13:06.931 [main] INFO  com.esercizio.due.app.MainUno - Insersici parola: 
+15:13:11.597 [main] INFO  com.esercizio.due.app.MainUno - Parole duplicate: 
+15:13:11.597 [main] INFO  com.esercizio.due.app.MainUno - Parola: saas
+15:13:11.597 [main] INFO  com.esercizio.due.app.MainUno - 1 Parole uninche: 
+15:13:11.597 [main] INFO  com.esercizio.due.app.MainUno - Parola: saas
+15:14:15.456 [main] INFO  com.esercizio.due.app.MainUno - Insersici il numero di parole: 
+15:14:17.679 [main] INFO  com.esercizio.due.app.MainUno - Insersici parola: 
+15:14:19.359 [main] INFO  com.esercizio.due.app.MainUno - Insersici parola: 
+15:14:22.157 [main] INFO  com.esercizio.due.app.MainUno - Parole duplicate: 
+15:14:22.157 [main] INFO  com.esercizio.due.app.MainUno - Parola: sasa
+15:14:22.157 [main] INFO  com.esercizio.due.app.MainUno - 1 Parole uninche: 
+15:14:22.157 [main] INFO  com.esercizio.due.app.MainUno - Parola: sasa
+15:14:58.337 [main] INFO  com.esercizio.due.app.MainUno - Insersici il numero di parole: 
+15:14:59.929 [main] INFO  com.esercizio.due.app.MainUno - Insersici parola: 
+15:15:01.813 [main] INFO  com.esercizio.due.app.MainUno - Insersici parola: 
+15:15:05.362 [main] INFO  com.esercizio.due.app.MainUno - Parole duplicate: 
+15:15:05.362 [main] INFO  com.esercizio.due.app.MainUno - Parola: sasa
+15:15:05.362 [main] INFO  com.esercizio.due.app.MainUno - 1 Parole uninche: 
+15:15:05.362 [main] INFO  com.esercizio.due.app.MainUno - Parola: sasa
+15:15:48.965 [main] INFO  com.esercizio.due.app.MainUno - Insersici il numero di parole: 
+15:15:50.067 [main] INFO  com.esercizio.due.app.MainUno - Insersici parola: 
+15:15:52.509 [main] INFO  com.esercizio.due.app.MainUno - Insersici parola: 
+15:15:53.561 [main] INFO  com.esercizio.due.app.MainUno - Insersici parola: 
+15:15:57.503 [main] INFO  com.esercizio.due.app.MainUno - Parole duplicate: 
+15:15:57.504 [main] INFO  com.esercizio.due.app.MainUno - Parola: sas
+15:15:57.504 [main] INFO  com.esercizio.due.app.MainUno - 1 Parole uninche: 
+15:15:57.504 [main] INFO  com.esercizio.due.app.MainUno - Parola: sas
+15:16:24.403 [main] INFO  com.esercizio.due.app.MainUno - Insersici il numero di parole: 
+15:16:27.218 [main] INFO  com.esercizio.due.app.MainUno - Insersici parola: 
+15:16:28.952 [main] INFO  com.esercizio.due.app.MainUno - Insersici parola: 
+15:16:30.377 [main] INFO  com.esercizio.due.app.MainUno - Insersici parola: 
+15:16:31.960 [main] INFO  com.esercizio.due.app.MainUno - Ottimo, non ci sono parole duplicate!
+15:16:31.961 [main] INFO  com.esercizio.due.app.MainUno - 3 Parole uninche: 
+15:16:31.961 [main] INFO  com.esercizio.due.app.MainUno - Parola: pesce
+15:16:31.961 [main] INFO  com.esercizio.due.app.MainUno - Parola: anatra
+15:16:31.961 [main] INFO  com.esercizio.due.app.MainUno - Parola: pollo
+15:27:49.021 [main] INFO  com.esercizio.due.app.MainUno - Inserisci il quantitativo di numeri: 
+15:27:51.941 [main] INFO  com.esercizio.due.app.MainUno - 0) 98
+15:27:51.942 [main] INFO  com.esercizio.due.app.MainUno - 0) 98
+15:27:51.942 [main] INFO  com.esercizio.due.app.MainUno - 1) 80
+15:27:51.942 [main] INFO  com.esercizio.due.app.MainUno - 0) 98
+15:27:51.943 [main] INFO  com.esercizio.due.app.MainUno - 1) 80
+15:27:51.943 [main] INFO  com.esercizio.due.app.MainUno - 2) 48
+15:46:12.646 [main] INFO  com.esercizio.due.app.MainUno - Inserisci il quantitativo di numeri: 
+15:46:15.394 [main] INFO  com.esercizio.due.app.MainUno - 0) 4
+15:46:15.395 [main] INFO  com.esercizio.due.app.MainUno - 0) 4
+15:46:15.395 [main] INFO  com.esercizio.due.app.MainUno - 1) 98
+15:46:15.395 [main] INFO  com.esercizio.due.app.MainUno - 0) 4
+15:46:15.395 [main] INFO  com.esercizio.due.app.MainUno - 1) 62
+15:46:15.395 [main] INFO  com.esercizio.due.app.MainUno - 2) 98
+15:46:43.809 [main] INFO  com.esercizio.due.app.MainUno - Inserisci il quantitativo di numeri: 
+15:47:59.864 [main] INFO  com.esercizio.due.app.MainUno - Inserisci il quantitativo di numeri: 
+15:48:02.009 [main] INFO  com.esercizio.due.app.MainUno - 0) 48
+15:48:02.009 [main] INFO  com.esercizio.due.app.MainUno - 0) 48
+15:48:02.010 [main] INFO  com.esercizio.due.app.MainUno - 1) 49
+15:48:23.789 [main] INFO  com.esercizio.due.app.MainUno - Inserisci il quantitativo di numeri: 
+15:48:41.851 [main] INFO  com.esercizio.due.app.MainUno - Inserisci il quantitativo di numeri: 
+15:48:43.390 [main] INFO  com.esercizio.due.app.MainUno - 1) 88
+15:49:40.042 [main] INFO  com.esercizio.due.app.MainUno - Inserisci il quantitativo di numeri: 
+15:49:44.181 [main] INFO  com.esercizio.due.app.MainUno - 1) 94
+15:50:02.589 [main] INFO  com.esercizio.due.app.MainUno - Inserisci il quantitativo di numeri: 
+15:50:04.344 [main] INFO  com.esercizio.due.app.MainUno - 0) 20
+15:50:04.345 [main] INFO  com.esercizio.due.app.MainUno - 1) 49
+15:50:04.345 [main] INFO  com.esercizio.due.app.MainUno - 2) 54
+15:51:19.483 [main] INFO  com.esercizio.due.app.MainUno - Inserisci il quantitativo di numeri: 
+15:51:21.297 [main] INFO  com.esercizio.due.app.MainUno - Lista iniziale:
+15:51:21.298 [main] INFO  com.esercizio.due.app.MainUno - 0) 46
+15:51:21.298 [main] INFO  com.esercizio.due.app.MainUno - 1) 18
+15:51:21.298 [main] INFO  com.esercizio.due.app.MainUno - 2) 64
+15:51:21.298 [main] INFO  com.esercizio.due.app.MainUno - Lista ordinata:
+15:51:21.298 [main] INFO  com.esercizio.due.app.MainUno - 0) 18
+15:51:21.299 [main] INFO  com.esercizio.due.app.MainUno - 1) 46
+15:51:21.299 [main] INFO  com.esercizio.due.app.MainUno - 2) 64
+15:53:08.836 [main] INFO  com.esercizio.due.app.MainUno - Inserisci il quantitativo di numeri: 
+15:53:10.487 [main] INFO  com.esercizio.due.app.MainUno - Lista iniziale:
+15:53:10.488 [main] INFO  com.esercizio.due.app.MainUno - 0) 55
+15:53:10.488 [main] INFO  com.esercizio.due.app.MainUno - 1) 80
+15:53:10.488 [main] INFO  com.esercizio.due.app.MainUno - 2) 40
+15:53:10.488 [main] INFO  com.esercizio.due.app.MainUno - Lista ordinata:
+15:53:10.488 [main] INFO  com.esercizio.due.app.MainUno - 0) 40
+15:53:10.489 [main] INFO  com.esercizio.due.app.MainUno - 1) 55
+15:53:10.489 [main] INFO  com.esercizio.due.app.MainUno - 2) 80
+15:53:10.489 [main] INFO  com.esercizio.due.app.MainUno - Lista invertita:
+15:53:10.489 [main] INFO  com.esercizio.due.app.MainUno - 0) 80
+15:53:10.489 [main] INFO  com.esercizio.due.app.MainUno - 1) 55
+15:53:10.489 [main] INFO  com.esercizio.due.app.MainUno - 2) 40
+15:58:53.001 [main] INFO  com.esercizio.due.app.MainUno - Inserisci il quantitativo di numeri: 
+15:58:58.362 [main] INFO  com.esercizio.due.app.MainUno - Lista iniziale:
+15:58:58.363 [main] INFO  com.esercizio.due.app.MainUno - 0) 42
+15:58:58.363 [main] INFO  com.esercizio.due.app.MainUno - 1) 35
+15:58:58.363 [main] INFO  com.esercizio.due.app.MainUno - 2) 28
+15:58:58.363 [main] INFO  com.esercizio.due.app.MainUno - Lista ordinata:
+15:58:58.363 [main] INFO  com.esercizio.due.app.MainUno - 0) 28
+15:58:58.364 [main] INFO  com.esercizio.due.app.MainUno - 1) 35
+15:58:58.364 [main] INFO  com.esercizio.due.app.MainUno - 2) 42
+15:58:58.364 [main] INFO  com.esercizio.due.app.MainUno - Lista invertita:
+15:58:58.364 [main] INFO  com.esercizio.due.app.MainUno - 0) 42
+15:58:58.364 [main] INFO  com.esercizio.due.app.MainUno - 1) 35
+15:58:58.364 [main] INFO  com.esercizio.due.app.MainUno - 2) 28
+15:58:58.365 [main] INFO  com.esercizio.due.app.MainUno - Posizioni pari:
+15:58:58.365 [main] INFO  com.esercizio.due.app.MainUno - 0) 42
+15:58:58.365 [main] INFO  com.esercizio.due.app.MainUno - 2) 28
+15:58:58.365 [main] INFO  com.esercizio.due.app.MainUno - Posizioni dispari:
+15:58:58.365 [main] INFO  com.esercizio.due.app.MainUno - 1) 35
+15:59:30.329 [main] INFO  com.esercizio.due.app.MainUno - Inserisci il quantitativo di numeri: 
+15:59:32.103 [main] INFO  com.esercizio.due.app.MainUno - Lista iniziale:
+15:59:32.103 [main] INFO  com.esercizio.due.app.MainUno - 0) 44
+15:59:32.103 [main] INFO  com.esercizio.due.app.MainUno - 1) 64
+15:59:32.103 [main] INFO  com.esercizio.due.app.MainUno - 2) 22
+15:59:32.103 [main] INFO  com.esercizio.due.app.MainUno - 3) 10
+15:59:32.103 [main] INFO  com.esercizio.due.app.MainUno - Lista ordinata:
+15:59:32.104 [main] INFO  com.esercizio.due.app.MainUno - 0) 10
+15:59:32.104 [main] INFO  com.esercizio.due.app.MainUno - 1) 22
+15:59:32.104 [main] INFO  com.esercizio.due.app.MainUno - 2) 44
+15:59:32.104 [main] INFO  com.esercizio.due.app.MainUno - 3) 64
+15:59:32.104 [main] INFO  com.esercizio.due.app.MainUno - Lista invertita:
+15:59:32.104 [main] INFO  com.esercizio.due.app.MainUno - 0) 64
+15:59:32.104 [main] INFO  com.esercizio.due.app.MainUno - 1) 44
+15:59:32.104 [main] INFO  com.esercizio.due.app.MainUno - 2) 22
+15:59:32.104 [main] INFO  com.esercizio.due.app.MainUno - 3) 10
+15:59:32.105 [main] INFO  com.esercizio.due.app.MainUno - Posizioni pari:
+15:59:32.105 [main] INFO  com.esercizio.due.app.MainUno - 0) 64
+15:59:32.105 [main] INFO  com.esercizio.due.app.MainUno - 2) 22
+15:59:32.105 [main] INFO  com.esercizio.due.app.MainUno - Posizioni dispari:
+15:59:32.105 [main] INFO  com.esercizio.due.app.MainUno - 1) 44
+15:59:32.105 [main] INFO  com.esercizio.due.app.MainUno - 3) 10
