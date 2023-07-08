@@ -5,5 +5,5 @@ public enum Periodicity {
 	WEEKLY,
 	MONTHLY,
 	BIANNUAL,
-	ANNUAL
+	ANNUAL, 
 }

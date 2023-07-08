@@ -1,7 +1,5 @@
 package com.classes.app;
 
-import java.time.LocalDate;
-
 import com.enums.app.Type;
 
 public class Book extends Printable{
@@ -9,7 +7,7 @@ public class Book extends Printable{
 	private Author author;
 	private Type type;
 	
-	public Book(int ISBN,String title, int pages, Author author, Type type, LocalDate date) {
+	public Book(String ISBN,String title, int pages, Author author, Type type, int date) {
 		super(ISBN, title, pages, date);
 		this.author = author;
 		this.type = type;
@@ -37,7 +35,7 @@ public class Book extends Printable{
 	}
 	
 	public String toFile() {
-		return "$" + getAuthor().toFile() + "#" + type + "#"+ this.getISBN() + "#" + this.getTitle() + "#" + this.getDate() + "#" + this.getPages();
+		return "@" + getAuthor().toFile() + "#" + type + "#"+ this.getISBN() + "#" + this.getTitle() + "#" + this.getDate() + "#" + this.getPages();
 	}
 
 

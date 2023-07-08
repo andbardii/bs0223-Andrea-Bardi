@@ -1,22 +1,20 @@
 package com.classes.app;
 
-import java.time.LocalDate;
-
 public abstract class Printable {
 
-	private int ISBN;
+	private String ISBN;
 	private String title;
-	private LocalDate date;
+	private int date;
 	private int pages;
 	
-	public Printable(int ISBN, String title, int pages, LocalDate date) {
+	public Printable(String ISBN, String title, int pages, int date) {
 		this.ISBN = ISBN;
 		this.title = title;
 		this.date = date;
 		this.pages = pages;
 	}
 	
-	public int getISBN() {
+	public String getISBN() {
 		return ISBN;
 	}
 
@@ -28,11 +26,11 @@ public abstract class Printable {
 		this.title = title;
 	}
 
-	public LocalDate getDate() {
+	public int getDate() {
 		return date;
 	}
 
-	public void setDate(LocalDate date) {
+	public void setDate(int date) {
 		this.date = date;
 	}
 

@@ -1,14 +1,12 @@
 package com.classes.app;
 
-import java.time.LocalDate;
-
 import com.enums.app.Periodicity;
 
 public class Magazine extends Printable{
 	
 	private Periodicity periodicity;
 
-	public Magazine(int ISBN, String title, int pages, Periodicity periodicity, LocalDate date) {
+	public Magazine(String ISBN, String title, int pages, Periodicity periodicity, int date) {
 		super(ISBN, title, pages, date);
 		this.periodicity = periodicity;
 	}
@@ -27,7 +25,7 @@ public class Magazine extends Printable{
 	}
 	
 	public String toFile() {
-		return "$" + this.getISBN() + "#" + this.getTitle() + "#" + this.getDate() + "#" + this.getPages() + "#" + periodicity;
+		return "@" + this.getISBN() + "#" + this.getTitle() + "#" + this.getDate() + "#" + this.getPages() + "#" + periodicity;
 	}
 
 }
