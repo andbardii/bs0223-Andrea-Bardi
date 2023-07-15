@@ -15,16 +15,16 @@ public class Utente {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	Long nTessera;
+	private Long nTessera;
 	
 	@Column(name = "name", nullable = false)
-	String nome;
+	private String nome;
 	
 	@Column(name = "lastname", nullable = false)
-	String cognome;
+	private String cognome;
 	
 	@Column(name = "dateBirth", nullable = false)
-	LocalDate dataNascita;
+	private LocalDate dataNascita;
 
 	public Utente(String nome, String cognome, LocalDate dataNascita) {
 		super();

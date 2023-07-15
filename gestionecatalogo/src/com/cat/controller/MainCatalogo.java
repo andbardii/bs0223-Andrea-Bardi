@@ -21,7 +21,7 @@ public class MainCatalogo {
 	public static void main(String[] args) {
 		
 //		##### BASICS PRINTABLE #####
-//		generatePrintable();
+//		generatePrintable(); 
 		
 //		printDAO.deleteBook(3);
 //		printDAO.getMagazine(2);
@@ -37,8 +37,18 @@ public class MainCatalogo {
 //		generateUsers();
 //		generatePrestiti();
 		
-//		prestDAO.deletePrestito(11);
-	
+//		prestDAO.getUser(1);
+//		prestDAO.getPrestito(3);
+//		prestDAO.terminaPrestito(3);
+//		prestDAO.deletePrestito(3);
+		
+//		##### QUERY PRESTITI #####
+//		prestDAO.findUsersPresitiBook(1);
+//		prestDAO.findUsersPresitiMag(1);
+		
+//		prestDAO.findDelayPrestitiBook();
+//		prestDAO.findDelayPrestitiMag();
+		
 	}
 	public static void generatePrintable(){
 		Book b1 = new Book();
@@ -121,26 +131,19 @@ public class MainCatalogo {
 	}
 
 	public static void generatePrestiti() {
-		Set<Book> bookSet1 = new HashSet<Book>();
-		bookSet1.add(printDAO.getBook(1));
-		bookSet1.add(printDAO.getBook(2));
 		
-		Set<Magazine> magSet1 = new HashSet<Magazine>();
-		magSet1.add(printDAO.getMagazine(1));
-		magSet1.add(printDAO.getMagazine(2));
-		
-		Prestito p1 = new Prestito(prestDAO.getUser(1), bookSet1, magSet1, LocalDate.now(),
-								   LocalDate.now().plusDays(30), LocalDate.now().plusDays(30));
+		Book b1 = printDAO.getBook(1);
+		Magazine m3 = printDAO.getMagazine(3);
+		Utente u1 = prestDAO.getUser(1);
+		Prestito p1 = new Prestito(u1, b1, m3, LocalDate.now(),
+								   LocalDate.now().plusDays(30));
 		prestDAO.savePrestito(p1);
 		
-		Set<Book> bookSet2 = new HashSet<Book>();
-		
-		Set<Magazine> magSet2 = new HashSet<Magazine>();
-		magSet2.add(printDAO.getMagazine(3));
-		magSet2.add(printDAO.getMagazine(4));
-		
-		Prestito p2 = new Prestito(prestDAO.getUser(2), bookSet2, magSet2, LocalDate.now(),
-								   LocalDate.now().plusDays(30), LocalDate.now().plusDays(30));
+		Book b2 = printDAO.getBook(2);
+		Magazine m1 = printDAO.getMagazine(1);
+		Utente u2 = prestDAO.getUser(2);
+		Prestito p2 = new Prestito(u2, b2, m1, LocalDate.now(),
+								   LocalDate.now().plusDays(30));
 		prestDAO.savePrestito(p2);
 	}
 }

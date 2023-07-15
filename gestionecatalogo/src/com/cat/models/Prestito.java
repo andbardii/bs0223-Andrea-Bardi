@@ -12,46 +12,47 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
+import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
+import javax.persistence.Table;
 
 @Entity
+@Table(name = "prestiti")
+@NamedQuery(name = "findDelayPrestitiBook", query = "SELECT p.libroPrestato FROM Prestito p WHERE p.dataRestituzione < p.dataFine OR p.dataFine IS NULL")
+@NamedQuery(name = "findDelayPrestitiMag", query = "SELECT p.rivistaPrestata FROM Prestito p WHERE p.dataRestituzione < p.dataFine OR p.dataFine IS NULL")
+@NamedQuery(name = "findUsersPresitiBook", query = "SELECT p.libroPrestato FROM Prestito p JOIN p.utente u WHERE u.nTessera = :nTessera")
+@NamedQuery(name = "findUsersPresitiMag", query = "SELECT p.rivistaPrestata FROM Prestito p JOIN p.utente u WHERE u.nTessera = :nTessera")
 public class Prestito {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	Long id;
+	private Long id;
 	
-	@ManyToOne(fetch = FetchType.LAZY)
-	Utente utente;
+	@ManyToOne
+	private Utente utente;
 	
-	@OneToMany(fetch = FetchType.LAZY)
-	Set<Book> libriPrestati = new HashSet<Book>();
+	@ManyToOne
+	private Book libroPrestato;
 	
-	@OneToMany(fetch = FetchType.LAZY)
-	Set<Magazine> rivistePrestati = new HashSet<Magazine>();
+	@ManyToOne
+	private Magazine rivistaPrestata;
 	
-	@Column(name = "startDate", nullable = false)
-	LocalDate dataInizio;
-	
-	@Column(name = "restDate", nullable = false)
-	LocalDate dataRestituzione;
-
-	@Column(name = "endDate", nullable = false)
-	LocalDate dataFine;
+	private LocalDate dataInizio;
+	private LocalDate dataRestituzione;
+	private LocalDate dataFine;
 
 	public Prestito() {
 		super();
 	}
 
-	public Prestito(Utente utente, Set<Book> libriPrestati, Set<Magazine> rivistePrestati, LocalDate dataInizio,
-			LocalDate dataRestituzione, LocalDate dataFine) {
+	public Prestito(Utente utente, Book libroPrestato, Magazine rivistaPrestata, LocalDate dataInizio,
+			LocalDate dataRestituzione) {
 		super();
 		this.utente = utente;
-		this.libriPrestati = libriPrestati;
-		this.rivistePrestati = rivistePrestati;
+		this.libroPrestato = libroPrestato;
+		this.rivistaPrestata = rivistaPrestata;
 		this.dataInizio = dataInizio;
 		this.dataRestituzione = dataRestituzione;
-		this.dataFine = dataFine;
 	}
 
 	public Long getId() {
@@ -66,20 +67,20 @@ public class Prestito {
 		this.utente = utente;
 	}
 
-	public Set<Book> getLibriPrestati() {
-		return libriPrestati;
+	public Book getLibriPrestati() {
+		return libroPrestato;
 	}
 
-	public void setLibriPrestati(Set<Book> libriPrestati) {
-		this.libriPrestati = libriPrestati;
+	public void setLibriPrestati(Book libroPrestato) {
+		this.libroPrestato = libroPrestato;
 	}
 
-	public Set<Magazine> getRivistePrestati() {
-		return rivistePrestati;
+	public Magazine getRivistePrestati() {
+		return rivistaPrestata;
 	}
 
-	public void setRivistePrestati(Set<Magazine> rivistePrestati) {
-		this.rivistePrestati = rivistePrestati;
+	public void setRivistePrestati(Magazine rivistaPrestata) {
+		this.rivistaPrestata = rivistaPrestata;
 	}
 
 	public LocalDate getDataInizio() {
@@ -108,8 +109,8 @@ public class Prestito {
 
 	@Override
 	public String toString() {
-		return "Prestito [id=" + id + ", utente=" + utente + ", libriPrestati=" + libriPrestati + ", rivistePrestati="
-				+ rivistePrestati + ", dataInizio=" + dataInizio + ", dataRestituzione=" + dataRestituzione
+		return "Prestito [id=" + id + ", utente=" + utente + ", libriPrestati=" + libroPrestato + ", rivistePrestati="
+				+ rivistaPrestata + ", dataInizio=" + dataInizio + ", dataRestituzione=" + dataRestituzione
 				+ ", dataFine=" + dataFine + "]";
 	}
 	

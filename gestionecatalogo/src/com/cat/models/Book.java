@@ -1,11 +1,8 @@
 package com.cat.models;
 
-import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
-import javax.persistence.FetchType;
-import javax.persistence.ManyToOne;
 import javax.persistence.NamedQuery;
 
 import com.cat.enums.Type;

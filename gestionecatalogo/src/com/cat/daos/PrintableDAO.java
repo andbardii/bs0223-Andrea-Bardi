@@ -133,14 +133,13 @@ public class PrintableDAO {
 			
 			try {
 				Query query = em.createNamedQuery("Book.findByDate");
-				query.setParameter("book_data", (Integer)date);
+				query.setParameter("book_data", date);
 				List<Book> resultBook = query.getResultList();
 				resultBook.forEach(b -> log.info(b.toString()));
 			}finally{
 				em.close();
 			}
 	}
-	
 	
 	public void getBookByAuthor(String author) {
 			EntityManager em = JpaUtil.getEntityManagerFactory().createEntityManager();
