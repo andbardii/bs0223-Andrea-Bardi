@@ -1,28 +1,26 @@
 package com.app.gestioneristorante.model;
 
+import jakarta.persistence.DiscriminatorValue;
 import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
 
-@NoArgsConstructor
-@AllArgsConstructor
-@Data
-@Builder
 @Entity
-@Table(name = "pizzas")
-public class Pizza implements Product{
+@DiscriminatorValue(value = "pizza")
+public abstract class Pizza extends Product{
 
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long id;
-	private String name;
 	private String ingredients;
-	private Double price;
 	private Double calories;
+	
+	public Pizza(String name, Double price, String ingredients, Double calories) {
+		super(name, price);
+		this.ingredients = ingredients;
+		this.calories = calories;
+	}
+
+	@Override
+	public String toString() {
+		return "Pizza [ingredients=" + ingredients + ", calories=" + calories + "]";
+	}
+	
+	
+	
 }

@@ -1,5 +1,6 @@
 package com.app.gestioneristorante.model;
 
+import jakarta.persistence.DiscriminatorValue;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -10,19 +11,22 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@NoArgsConstructor
-@AllArgsConstructor
-@Data
-@Builder
 @Entity
-@Table(name = "drinks")
-public class Drink implements Product{
+@DiscriminatorValue(value = "drink")
+public abstract class Drink extends Product{
 
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long id;
-	private String name;
-	private Double price;
 	private Double calories;
+
+	public Drink(String name, Double price, Double calories) {
+		super(name, price);
+		this.calories = calories;
+	}
+
+	@Override
+	public String toString() {
+		return "Drink [calories=" + calories + "]";
+	}
+	
+	
 	
 }
