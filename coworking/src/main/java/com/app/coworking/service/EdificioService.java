@@ -32,4 +32,17 @@ public class EdificioService {
 	public Edificio findById(long id) {
 		return edificioDAO.findById(id).get();
 	}
+	
+	public Iterable<Edificio> findAll() {
+		edificioDAO.findAll().forEach(e -> log.info(e.toString()));
+		return edificioDAO.findAll();
+	}
+
+	public void update(long id) {
+		edificioDAO.save(findById(id));
+	}
+	
+	public void remove(long id) {
+		edificioDAO.delete(findById(id));
+	}
 }

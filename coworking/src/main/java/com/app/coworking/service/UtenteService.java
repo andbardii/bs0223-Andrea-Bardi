@@ -27,4 +27,22 @@ public class UtenteService {
 		log.info("Utente " + u.getNome() + " salvato nel database.");
 		return u;
 	}
+	
+	public Utente findById(long id) {
+		return utenteDAO.findById(id).get();
+	}
+	
+	public Iterable<Utente> findAll() {
+		utenteDAO.findAll().forEach(u -> log.info(u.toString()));
+		return utenteDAO.findAll();
+	}
+
+	public void update(long id) {
+		utenteDAO.save(findById(id));
+	}
+	
+	public void remove(long id) {
+		utenteDAO.delete(findById(id));
+	}
+	
 }
