@@ -44,22 +44,25 @@ public class CoworkingRunner implements CommandLineRunner {
 		postazioneSvc.creaPostazione("Sala Privata Grande", TipoPostazione.PRIVATO, 10, 3);
 
 //		##### CREA UTENTI #####
-		utenteSvc.creaUtente("Andrea Bardi", "@andbardii","andbardii@icloud.com");
-		utenteSvc.creaUtente("Federico Morgante", "@fedemorgante","federicomorgante@gmail.com");
-		utenteSvc.creaUtente("Vincenzo Schembri", "@vinceee","vincenzoschembri@gmail.com");
-		utenteSvc.creaUtente("Gianluca Falcone", "@gianlucone","gianlucafalcone@gmail.com");
+		utenteSvc.registraUtente("Andrea Bardi", "@andbardii","andbardii@icloud.com");
+		utenteSvc.registraUtente("Federico Morgante", "@fedemorgante","federicomorgante@gmail.com");
+		utenteSvc.registraUtente("Vincenzo Schembri", "@vinceee","vincenzoschembri@gmail.com");
+		utenteSvc.registraUtente("Gianluca Falcone", "@gianlucone","gianlucafalcone@gmail.com");
+		utenteSvc.registraUtente("Mario Rossi", "@mario","mariorossi@gmail.com");
 
 //		##### CREA PRENOTAZIONI #####
-		prenotazioneSvc.creaPrenotazione(10, 1, LocalDate.of(2023, 8, 1));
-		prenotazioneSvc.creaPrenotazione(10, 3, LocalDate.of(2023, 8, 1));
-		prenotazioneSvc.creaPrenotazione(10, 2, LocalDate.of(2023, 8, 1));
-		prenotazioneSvc.creaPrenotazione(10, 4, LocalDate.of(2023, 8, 1));
-		prenotazioneSvc.creaPrenotazione(9, 2, LocalDate.of(2023, 8, 2));
-		prenotazioneSvc.creaPrenotazione(2, 2, LocalDate.of(2023, 8, 2));
+		prenotazioneSvc.prenota(10, 1, LocalDate.of(2023, 8, 1));
+		prenotazioneSvc.prenota(10, 3, LocalDate.of(2023, 8, 1));
+		prenotazioneSvc.prenota(10, 2, LocalDate.of(2023, 8, 1));
+		prenotazioneSvc.prenota(10, 4, LocalDate.of(2023, 8, 1));
+		prenotazioneSvc.prenota(10, 5, LocalDate.of(2023, 8, 2));
+		prenotazioneSvc.prenota(9, 2, LocalDate.of(2023, 8, 2));
+		prenotazioneSvc.prenota(2, 2, LocalDate.of(2023, 8, 2));
 
 //		##### TEST METODI #####
 		postazioneSvc.findByTipoAndCitta(TipoPostazione.PRIVATO, "Milano");
-
+		prenotazioneSvc.findByUtente(1);
+		prenotazioneSvc.changeDataPrenotazione(4, LocalDate.of(2023, 8, 1));
 		
 	}
 
