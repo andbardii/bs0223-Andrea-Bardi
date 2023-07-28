@@ -3455,3 +3455,171 @@ java.lang.InterruptedException
 
 !ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-28 17:20:51.636
 !MESSAGE Classpath changed for project: coworking
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-28 17:30:21.152
+!MESSAGE Classpath changed for project: coworking
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-28 17:31:28.002
+!MESSAGE Classpath changed for project: coworking
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-28 17:32:10.273
+!MESSAGE Classpath changed for project: coworking
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-28 17:32:12.362
+!MESSAGE Classpath changed for project: coworking
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-28 17:32:54.476
+!MESSAGE Classpath changed for project: coworking
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-28 17:32:58.820
+!MESSAGE Classpath changed for project: coworking
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-28 17:37:09.296
+!MESSAGE Classpath changed for project: coworking
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-28 17:37:20.072
+!MESSAGE Classpath changed for project: coworking
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-28 17:37:52.568
+!MESSAGE Classpath changed for project: coworking
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-28 17:38:05.172
+!MESSAGE Classpath changed for project: coworking
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-28 17:38:37.877
+!MESSAGE Classpath changed for project: coworking
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-07-28 17:40:38.626
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-07-28 17:40:58.013
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-28 17:41:41.541
+!MESSAGE Classpath changed for project: coworking
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-28 17:43:47.800
+!MESSAGE Classpath changed for project: coworking
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-28 17:43:54.778
+!MESSAGE Classpath changed for project: coworking
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-28 17:45:39.398
+!MESSAGE Classpath changed for project: coworking
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-28 17:45:45.045
+!MESSAGE Classpath changed for project: coworking
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-28 17:45:55.298
+!MESSAGE Classpath changed for project: coworking
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-28 17:46:03.137
+!MESSAGE Classpath changed for project: coworking
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-28 17:46:10.063
+!MESSAGE Classpath changed for project: coworking
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-28 17:57:12.365
+!MESSAGE Classpath changed for project: coworking
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-28 17:57:30.825
+!MESSAGE Classpath changed for project: coworking
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-07-28 17:58:31.923
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-28 17:58:35.496
+!MESSAGE Classpath changed for project: coworking
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-28 17:59:09.697
+!MESSAGE Classpath changed for project: coworking
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-28 17:59:18.669
+!MESSAGE Classpath changed for project: coworking
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-28 18:00:35.044
+!MESSAGE Classpath changed for project: coworking
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-28 18:05:58.904
+!MESSAGE Classpath changed for project: coworking
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-07-28 18:36:45.657
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-28 19:03:46.395
+!MESSAGE Classpath changed for project: coworking
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-28 19:08:08.059
+!MESSAGE Classpath changed for project: coworking
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-28 19:08:19.611
+!MESSAGE Classpath changed for project: coworking
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-28 19:11:05.557
+!MESSAGE Classpath changed for project: coworking
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-28 19:11:08.591
+!MESSAGE Classpath changed for project: coworking
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-28 19:12:21.113
+!MESSAGE Classpath changed for project: coworking
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-28 19:14:16.343
+!MESSAGE Classpath changed for project: coworking
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-28 19:14:22.938
+!MESSAGE Classpath changed for project: coworking
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-28 19:15:32.652
+!MESSAGE Classpath changed for project: coworking
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-28 19:16:03.001
+!MESSAGE Classpath changed for project: coworking
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-28 19:16:27.202
+!MESSAGE Classpath changed for project: coworking
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-28 19:16:34.370
+!MESSAGE Classpath changed for project: coworking
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-28 19:16:48.993
+!MESSAGE Classpath changed for project: coworking
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-28 19:17:04.041
+!MESSAGE Classpath changed for project: coworking

@@ -19,6 +19,7 @@ public class PrenotazioneService {
 	
 	@Autowired PostazioneService postazioneSvc;
 	@Autowired UtenteService utenteSvc;
+	@Autowired EdificioService edificioSvc;
 
 	private Logger log = LoggerFactory.getLogger(PrenotazioneService.class);
 	
@@ -99,5 +100,39 @@ public class PrenotazioneService {
 			log.info("La data selezionata è al completo, seleziona un'altra data!");
 		}
 	}
+	
+	public void checkDisponibilitaPostazione(long codice, LocalDate data) {
+		
+		Postazione pos = postazioneSvc.findById(codice);
+		List<Prenotazione> res = prenotazioneDAO.findByPostazioneAndData(pos, data);
+		
+		if(res.size() < pos.getPosti()) {
+			log.info("Ci sono ancora posti, prenota il tuo!");
+		}else {
+			log.info("Non ci sono più posti, ritenta più avanti in caso di ripensamenti!");
+		}
+	}
+	
+	public void prenotaGruppo(long codice, LocalDate data, long ...id) {
+		
+		int len = id.length;
+		Postazione pos = postazioneSvc.findById(codice);
+		List<Prenotazione> res = prenotazioneDAO.findByPostazioneAndData(pos, data);
+		
+		if(pos.getPosti() - res.size() >= len ) {
+			for(long cid: id) {
+				if(prenotazioneDAO.findByUtenteAndData(utenteSvc.findById(cid), data) == null) {
+					prenota(codice, cid, data);
+				}else {
+					log.info("L'utente " + utenteSvc.findById(cid).getNome() + " ha gia una prenotazione nella data scelta!");
+				}
+			}
+		}else {
+			log.info("Non ci sono abbastanza posti per il gruppo!");
+			int posti = (pos.getPosti() - res.size());
+			log.info("Posti disponbili:  " + posti + " su " + len + " necessari.");
+		}
+			
+	}	
 	
 }

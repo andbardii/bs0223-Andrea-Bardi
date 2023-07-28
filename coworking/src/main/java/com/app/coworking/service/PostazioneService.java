@@ -22,7 +22,7 @@ public class PostazioneService {
 	@Autowired PostazioneDAO postazioneDAO;
 	@Autowired @Qualifier("postazione") private ObjectProvider<Postazione> edificioProvider;
 
-	public Postazione creaPostazione(String descrizione, TipoPostazione tipo, int posti, long id) {
+	public Postazione setPostazione(String descrizione, TipoPostazione tipo, int posti, long id) {
 		Postazione p = edificioProvider.getObject();
 		p.setDescrizione(descrizione);
 		p.setTipo(tipo);

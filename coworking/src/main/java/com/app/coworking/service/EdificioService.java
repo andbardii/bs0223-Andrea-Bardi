@@ -19,7 +19,7 @@ public class EdificioService {
 	@Autowired @Qualifier("edificio") private ObjectProvider<Edificio> edificioProvider;
 
 
-	public Edificio creaEdificio(String nome, String indirizzo, String citta) {
+	public Edificio salvaEdificio(String nome, String indirizzo, String citta) {
 		Edificio e = edificioProvider.getObject();
 		e.setNome(nome);
 		e.setIndirizzo(indirizzo);
