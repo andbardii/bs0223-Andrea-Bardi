@@ -1,6 +1,7 @@
 package com.app.coworking.service;
 
 import java.time.LocalDate;
+import java.util.List;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -9,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
+import com.app.coworking.model.Postazione;
 import com.app.coworking.model.Prenotazione;
 import com.app.coworking.repository.PrenotazioneDAO;
 
@@ -23,7 +25,7 @@ public class PrenotazioneService {
 	@Autowired PrenotazioneDAO prenotazioneDAO;
 	@Autowired @Qualifier("prenotazione") private ObjectProvider<Prenotazione> prenotazioneProvider;
 
-	public Prenotazione creaPrenotazione(long codice, long id, LocalDate data) {
+	public Prenotazione prenota(long codice, long id, LocalDate data) {
 		if(prenotazioneDAO.findByUtenteAndData(utenteSvc.findById(id), data) == null) {
 			if(prenotazioneDAO.findByPostazioneAndData(postazioneSvc.findById(codice), data).size() < postazioneSvc.findById(codice).getPosti()) {
 				Prenotazione p = prenotazioneProvider.getObject();
@@ -34,7 +36,7 @@ public class PrenotazioneService {
 				log.info("Prenotazione presso la postazione " + p.getPostazione().getCodice() + "  " + p.getData() + " salvata nel database.");
 				return p;
 			}else {
-				log.info("La postazione è piena in questa data.");
+				log.info("La postazione è piena in questa data, riprova più tardi in caso ci fossero delle rinunce.");
 				return null;
 			}
 		}else {
@@ -45,7 +47,13 @@ public class PrenotazioneService {
 	}
 	
 	public Prenotazione findById(long id) {
-		return prenotazioneDAO.findById(id).get();
+		Prenotazione res = prenotazioneDAO.findById(id).get();
+		if(res.equals(null)) {
+			log.info("Nessuna prenotazione trovata!");
+			return null;
+		}else {
+			return res;
+		}
 	}
 	
 	public Iterable<Prenotazione> findAll() {
@@ -59,6 +67,37 @@ public class PrenotazioneService {
 	
 	public void remove(long id) {
 		prenotazioneDAO.delete(findById(id));
+	}
+	
+	public List<Prenotazione> findByUtente(long id) {
+		List<Prenotazione> res = prenotazioneDAO.findByUtente(utenteSvc.findById(id));
+		if(utenteSvc.findById(id) == null) {
+			log.info("Utente inesistente!");
+			return null;
+		}else {
+			if(res.size() == 0) {
+				log.info("Nessuna prenotazione trovata per l'utente " + utenteSvc.findById(id).getNome() + "!");
+				return null;
+			}else {
+				log.info("Prenotazioni dell'utente: " + utenteSvc.findById(id).getNome());
+				res.forEach(p -> log.info(p.toString()));
+				return res;
+			}
+		}
+	}
+	
+	public void changeDataPrenotazione(long id, LocalDate data) {
+		
+		Prenotazione pre = findById(id);
+		Postazione pos = pre.getPostazione();
+		List<Prenotazione> res = prenotazioneDAO.findByPostazioneAndData(pos, data);
+		if(res.size() < pos.getPosti()) {
+			pre.setData(data);
+			prenotazioneDAO.save(pre);
+			log.info("Data della prenotazione aggiornata!");
+		}else {
+			log.info("La data selezionata è al completo, seleziona un'altra data!");
+		}
 	}
 	
 }

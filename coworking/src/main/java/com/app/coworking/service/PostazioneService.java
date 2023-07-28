@@ -34,7 +34,13 @@ public class PostazioneService {
 	}
 	
 	public Postazione findById(long id) {
-		return postazioneDAO.findById(id).get();
+		Postazione res = postazioneDAO.findById(id).get();
+		if(res.equals(null)) {
+			log.info("Nessuna postazione trovata!");
+			return null;
+		}else {
+			return res;
+		}
 	}
 	
 	public Iterable<Postazione> findAll() {
@@ -51,8 +57,15 @@ public class PostazioneService {
 	}
 	
 	public List<Postazione> findByTipoAndCitta(TipoPostazione tipo, String citta) {
-		postazioneDAO.findByTipoAndCittaOfEdificio(tipo, citta).forEach(p -> log.info(p.toString()));
-		return postazioneDAO.findByTipoAndCittaOfEdificio(tipo, citta);
+		List<Postazione> res = postazioneDAO.findByTipoAndCittaOfEdificio(tipo, citta);
+		if(res.size() == 0) {
+			log.info("Nessuna postazione trovata!");
+			return null;
+		}else {
+			res.forEach(p -> log.info(p.toString()));
+			return res;
+		}
+		
 	}
 	
 }

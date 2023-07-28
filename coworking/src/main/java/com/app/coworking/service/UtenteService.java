@@ -18,7 +18,7 @@ public class UtenteService {
 	@Autowired UtenteDAO utenteDAO;
 	@Autowired @Qualifier("utente") private ObjectProvider<Utente> utenteProvider;
 
-	public Utente creaUtente(String nome, String username, String email) {
+	public Utente registraUtente(String nome, String username, String email) {
 		Utente u = utenteProvider.getObject();
 		u.setNome(nome);
 		u.setUsername(username);
@@ -29,7 +29,13 @@ public class UtenteService {
 	}
 	
 	public Utente findById(long id) {
-		return utenteDAO.findById(id).get();
+		Utente res = utenteDAO.findById(id).get();
+		if(res.equals(null)) {
+			log.info("Nessun utente trovato!");
+			return null;
+		}else {
+			return res;
+		}
 	}
 	
 	public Iterable<Utente> findAll() {

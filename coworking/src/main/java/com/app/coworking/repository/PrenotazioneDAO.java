@@ -10,6 +10,7 @@ import com.app.coworking.model.Prenotazione;
 import com.app.coworking.model.Utente;
 
 public interface PrenotazioneDAO extends CrudRepository<Prenotazione, Long> {
+	List<Prenotazione> findByUtente(Utente utente);
 	Prenotazione findByUtenteAndData(Utente utente, LocalDate data);
 	List<Prenotazione> findByPostazioneAndData(Postazione postazione, LocalDate data);
 }

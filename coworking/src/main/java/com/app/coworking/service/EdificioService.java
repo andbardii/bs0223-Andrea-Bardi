@@ -30,7 +30,13 @@ public class EdificioService {
 	}
 	
 	public Edificio findById(long id) {
-		return edificioDAO.findById(id).get();
+		Edificio res = edificioDAO.findById(id).get();
+		if(res.equals(null)) {
+			log.info("Nessun edificio trovato!");
+			return null;
+		}else {
+			return res;
+		}
 	}
 	
 	public Iterable<Edificio> findAll() {
