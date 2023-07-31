@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>About me Page</title>
+		<style type="text/css">
+			html,
+			body
+			{
+				font-family: "Arial";
+				height: 100%;
+				width: 100%;
+				margin: 0;
+			}
+			.navbar{
+			position:fixed;
+			top: 0;
+			width:100%;
+			height:10%;
+			background-color: darkred;
+			display:flex;
+			}
+			.navbar div{
+			color:white;
+			padding:2em;
+			}
+			.navbar div a{
+			text-decoration: none;
+			color: white;
+			}
+			.navbar div:hover{
+			cursor:pointer;
+			border-color: white;
+			border-width: 1px;
+			border-radius: 25%;
+			transform:scale(1.05);
+			}
+			.container{
+			padding:15%;
+			display:flex;
+			flex-direction:column;
+			}
+			img{
+			border-radius: 100%;
+			position: absolute;
+			top: 15%;
+			right: 15%;
+			}
+			img:hover{
+			transform:scale(1.1);
+			box-shadow: 0px 0px 5px grey;
+			}
+			.cardcont{
+			padding-top:10%;
+			display: flex;
+			justify-content: space-around;
+			}
+			.card{
+			width:30%;
+			height:30%;
+			border-style: solid;
+  			border-width: 1px;
+  			border-color: black;
+			border-radius: 25px;
+			padding:2%;
+			box-shadow: 0px 0px 5px grey;
+			}
+			.card:hover{
+			transform:scale(1.1);
+			}
+		</style>
+	</head>
+	<body>
+		
+		<div class="navbar">
+			<div >
+				<a href="http://localhost:8080">Home</a>	
+			</div>
+			<div >
+				<a href="http://localhost:8080/rubrica">Rubrica</a>	
+			</div>
+		</div>
+		
+		<div class="container">
+			<h1>Andrea Bardi</h1>
+			<div class="img">
+			<img alt="Immagine" src="https://avatars.githubusercontent.com/u/126244632?v=4" width="5%">
+			</div>
+			<p>
+			Sono un ragazzo di 20 anni diplomato in Grafica e Comunicazione, ora sto frequentando un corso Full Stack Develop presso Epicode School.
+			Ho sempre voluto lavorare nel digitale basando i miei studi su questa convinzione. Nei prossimi anni, continuerò a formarmi ed a cercare nuove tecnologie con le quali mettermi alla prova.
+			</p>
+			<div class="cardcont">
+			<div class="card">
+			<b>Le mie più grandi passioni sono:</b><br>
+			💻 La Tecnologia e l'Innovazione.<br>
+			🖌 Il Design e la Progettazione Creativa.<br>
+			📊 La Finanza e l’analisi di dati.<br>
+			🗺 Viaggiare e scoprire diverse culture.
+			</div>
+			
+			<div class="card">
+			<b>Le soft skills su cui ho lavorato di più:</b><br>
+            🫱🏻‍🫲🏼 Collaborazione prima di ogni cosa. <br>
+			⚙️ Problem solving.<br>
+			📚 Interfacciarsi nuove tecnologie.<br>
+			💯 Sempre coinvolto al 100%.
+			</div>
+			</div>
+		</div>
+		
+	</body>
+</html>
