@@ -36,9 +36,24 @@
 			transform:scale(1.05);
 			}
 			.container{
-			padding:15%;
-			display:flex;
-			flex-direction:column;
+			padding: 15%;
+			display: flex;
+			flex-direction: column;
+			}
+			.contatto{
+			display: flex;
+			align-items: center;
+			}
+			.contatto img{
+			border-radius: 100%;
+			
+			}
+			.contatto .info{
+			display: flex;
+			align-items: center;
+			}
+			.info b, .info p{
+			padding: 3%;
 			}
 		</style>
 	</head>
@@ -57,12 +72,18 @@
 			<h1>Rubrica</h1>
 			
 			<div class="contatti">
-			<div class="contatto">
-			<img alt="" src="">
-			<h3>Nome</h3>
-			<b>45363288374</b>
-			<p>email@email.com<p>
-			</div>
+			
+				<div class="contatto" th:each="utente: ${lista}">
+				<div>
+					<h3 th:text=${utente.nome}></h3>
+				<img alt="immagine contatto" th:src="${utente.immagine}" width="30%">
+				</div>
+				<div class="info">
+					<b th:text=${utente.telefono}></b>
+					<p th:text=${utente.email}><p>
+				</div>
+				</div>
+				
 			</div>
 			
 		</div>

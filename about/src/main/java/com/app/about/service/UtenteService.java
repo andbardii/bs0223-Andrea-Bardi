@@ -1,5 +1,7 @@
 package com.app.about.service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.ObjectProvider;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -23,5 +25,8 @@ public class UtenteService {
 		u.setImmagine(immagine);
 		uDAO.save(u);
 		return u;
+	}
+	public List<Utente> findAllRubrica(){
+		return (List<Utente>) uDAO.findAll();
 	}
 }
