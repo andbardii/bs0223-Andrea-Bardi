@@ -23,7 +23,7 @@ public class Utente {
 	private String immagine;
 	private String nome;
 	@Column(unique = true)
-	private int telefono;
+	private String telefono;
 	@Column(unique = true)
 	private String email;
 	

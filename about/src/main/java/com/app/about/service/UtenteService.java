@@ -16,10 +16,10 @@ import com.app.about.repository.UtenteDAO;
 public class UtenteService {
 
 	@Autowired UtenteDAO uDAO;
-	@Autowired @Qualifier("utente") private ObjectProvider<Utente> edificioProvider;
+	@Autowired @Qualifier("utente") private ObjectProvider<Utente> utenteProvider;
 	
-	public Utente salvaUtenteRubrica(String nome, String email, int telefono, String immagine) {
-		Utente u = edificioProvider.getObject();
+	public Utente salvaUtenteRubrica(String nome, String email, String telefono, String immagine) {
+		Utente u = utenteProvider.getObject();
 		u.setNome(nome);
 		u.setEmail(email);
 		u.setTelefono(telefono);
@@ -33,6 +33,11 @@ public class UtenteService {
 	public Utente findById(long id) {
 		Utente res = uDAO.findById(id).get();
 		return res;
+	}
+	public Utente saveNewUtente(Utente utente) {
+		Utente u = utenteProvider.getObject();
+		u = utente;
+		return u;
 	}
 	
 }
