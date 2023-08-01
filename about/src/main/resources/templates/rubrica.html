@@ -76,7 +76,9 @@
 				<div class="contatto" th:each="utente: ${lista}">
 				<div>
 					<h3 th:text=${utente.nome}></h3>
-				<img alt="immagine contatto" th:src="${utente.immagine}" width="30%">
+				 <a th:href="@{'http://localhost:8080/rubrica/' + ${utente.id}}">
+					<img alt="immagine contatto" th:src="${utente.immagine}" width="30%">
+				</a>
 				</div>
 				<div class="info">
 					<b th:text=${utente.telefono}></b>

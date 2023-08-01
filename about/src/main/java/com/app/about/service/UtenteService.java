@@ -11,6 +11,7 @@ import com.app.about.model.Utente;
 import com.app.about.repository.UtenteDAO;
 
 
+
 @Service
 public class UtenteService {
 
@@ -29,4 +30,9 @@ public class UtenteService {
 	public List<Utente> findAllRubrica(){
 		return (List<Utente>) uDAO.findAll();
 	}
+	public Utente findById(long id) {
+		Utente res = uDAO.findById(id).get();
+		return res;
+	}
+	
 }
