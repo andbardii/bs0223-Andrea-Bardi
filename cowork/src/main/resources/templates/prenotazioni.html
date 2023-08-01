@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>Coworking Official</title>
+		<style type="text/css">
+			html,
+			body
+			{
+			font-family: "Arial";
+			height: 100%;
+			width: 100%;
+			margin: 0;
+			}
+			.navbar{
+			position:fixed;
+			top: 0;
+			width:100%;
+			height:10%;
+			background-color: whitesmoke;
+			display:flex;
+			}
+			.navbar div{
+			color:black;
+			padding:2em;
+			}
+			.navbar div a{
+			text-decoration: none;
+			color: black;
+			}
+			.navbar div:hover{
+			cursor:pointer;
+			transform:scale(1.05);
+			}
+			.container{
+			padding:15%;
+			display:flex;
+			flex-direction:column;
+			}
+			.cardcont{
+			padding-top:10%;
+			display: flex;
+			justify-content: space-around;
+			}
+			.card{
+			width:30%;
+			height:30%;
+			border-style: solid;
+  			border-width: 1px;
+  			border-color: black;
+			border-radius: 25px;
+			padding:2%;
+			box-shadow: 0px 0px 5px grey;
+			}
+			.card:hover{
+			transform:scale(1.1);
+			}
+		</style>
+	</head>
+	<body>
+		
+		<div class="navbar">
+			<div>
+				<a href="http://localhost:8080">Home</a>	
+			</div>
+			
+			<div>
+				<a href="http://localhost:8080/prenotazioni">Prenotazioni</a>	
+			</div>
+		</div>
+		
+		<div class="container">
+			<div class="cardcont">
+			<div class="card" th:each="prenotazione: ${list}">
+				<b>Prenotazione n°: </b><b th:text="prenotazione.id"></b>
+			</div>
+			</div>
+		</div>
+		
+	</body>
+</html>
