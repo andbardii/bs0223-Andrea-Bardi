@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>Coworking Official</title>
+		<style type="text/css">
+			html,
+			body
+			{
+			font-family: "Arial";
+			height: 100%;
+			width: 100%;
+			margin: 0;
+			}
+			.navbar{
+			position:fixed;
+			top: 0;
+			width:100%;
+			height:10%;
+			background-color: whitesmoke;
+			display:flex;
+			}
+			.navbar div{
+			color:black;
+			padding:2em;
+			}
+			.navbar div a{
+			text-decoration: none;
+			color: black;
+			}
+			.navbar div:hover{
+			cursor:pointer;
+			transform:scale(1.05);
+			}
+			.container{
+			padding:15%;
+			display:flex;
+			flex-direction:column;
+			}
+			.cardcont{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			}
+			.card{
+			width:20%;
+			height:20%;
+			border-style: solid;
+  			border-width: 1px;
+  			border-color: black;
+			border-radius: 25px;
+			padding:2%;
+			box-shadow: 0px 0px 5px grey;
+			margin-bottom: 2%;
+			}
+			.card:hover{
+			transform:scale(1.1);
+			}
+		</style>
+	</head>
+	<body>
+		
+		<div class="navbar">
+			<div>
+				<a href="http://localhost:8080">Home</a>	
+			</div>
+			
+			<div>
+				<a href="/prenotazione">Prenotazioni</a>	
+			</div>
+			
+		</div>
+		
+		<div class="container">
+			<div class="cardcont">
+			<div class="card" th:each="prenotazione: ${lista}">
+				<b>Prenotazione numero: </b><b th:text="${prenotazione.id}"></b>
+				<p><span>Data: </span><span th:text="${prenotazione.data}"></span></p>
+				<p><span>Utente: </span><span th:text="${prenotazione.utente.nome}"></span></p>
+				<p><span>Postazione: </span><span th:text="${prenotazione.postazione.descrizione}"></span></p>
+				<p>Edificio: </p>
+				<ul>
+					<li  th:text="${prenotazione.postazione.edificio.nome}"></li>
+					<li  th:text="${prenotazione.postazione.edificio.indirizzo}"></li>
+					<li  th:text="${prenotazione.postazione.edificio.citta}"></li>
+				</ul>
+			</div>
+			</div>
+		</div>
+		
+	</body>
+</html>
