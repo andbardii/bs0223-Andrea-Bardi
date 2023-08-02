@@ -25,6 +25,10 @@ public class CoworkController {
 	public String getHome() {
 		return "index";
 	}
+	@GetMapping("/prenota")
+	public String getPrenota() {
+		return "prenota";
+	}
 	@GetMapping("/prenotazione")
 	public ModelAndView getPrenotazioni() {
 		List<Prenotazione> listaPrenotazioni = prenotazioneSvc.findAll();
