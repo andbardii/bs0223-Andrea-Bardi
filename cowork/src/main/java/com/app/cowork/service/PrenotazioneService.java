@@ -57,9 +57,8 @@ public class PrenotazioneService {
 		}
 	}
 	
-	public Iterable<Prenotazione> findAll() {
-		prenotazioneDAO.findAll().forEach(p -> log.info(p.toString()));
-		return prenotazioneDAO.findAll();
+	public List<Prenotazione> findAll() {
+		return (List<Prenotazione>) prenotazioneDAO.findAll();
 	}
 
 	public void update(long id) {

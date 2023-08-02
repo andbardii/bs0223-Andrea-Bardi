@@ -38,8 +38,8 @@
 			flex-direction:column;
 			}
 			.cardcont{
-			padding-top:10%;
 			display: flex;
+			flex-wrap: wrap;
 			justify-content: space-around;
 			}
 			.card{
@@ -51,6 +51,7 @@
 			border-radius: 25px;
 			padding:2%;
 			box-shadow: 0px 0px 5px grey;
+			margin-bottom: 2%;
 			}
 			.card:hover{
 			transform:scale(1.1);
@@ -65,14 +66,27 @@
 			</div>
 			
 			<div>
-				<a href="http://localhost:8080/prenotazioni">Prenotazioni</a>	
+				<a href="/prenotazione">Prenotazioni</a>	
+			</div>
+			
+			<div>
+				<a href="/prenota">PRENOTA</a>	
 			</div>
 		</div>
 		
 		<div class="container">
 			<div class="cardcont">
-			<div class="card" th:each="prenotazione: ${list}">
-				<b>Prenotazione n°: </b><b th:text="prenotazione.id"></b>
+			<div class="card" th:each="prenotazione: ${lista}">
+				<b>Prenotazione numero: </b><b th:text="${prenotazione.id}"></b>
+				<p><span>Data: </span><span th:text="${prenotazione.data}"></span></p>
+				<p><span>Utente: </span><span th:text="${prenotazione.utente.nome}"></span></p>
+				<p><span>Postazione: </span><span th:text="${prenotazione.postazione.descrizione}"></span></p>
+				<p>Edificio: </p>
+				<ul>
+					<li  th:text="${prenotazione.postazione.edificio.nome}"></li>
+					<li  th:text="${prenotazione.postazione.edificio.indirizzo}"></li>
+					<li  th:text="${prenotazione.postazione.edificio.citta}"></li>
+				</ul>
 			</div>
 			</div>
 		</div>
