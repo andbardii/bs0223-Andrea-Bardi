@@ -5497,3 +5497,434 @@ java.lang.ClassNotFoundException: org.springframework.ide.vscode.commons.protoco
 
 !ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-02 17:16:03.184
 !MESSAGE Classpath changed for project: project_1
+!SESSION 2023-08-03 14:14:42.050 -----------------------------------------------
+eclipse.buildId=4.26.0.20221201-1200
+java.version=17.0.7
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=it_IT
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/andbardii/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -keyring /Users/andbardii/.eclipse_keyring
+
+!ENTRY org.eclipse.jface 2 0 2023-08-03 14:14:47.384
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-08-03 14:14:47.384
+!MESSAGE A conflict occurred for COMMAND+SHIFT+T:
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-08-03 14:14:47.384
+!MESSAGE A conflict occurred for ALT+COMMAND+R:
+Binding(ALT+COMMAND+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.ui.edit.rename"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+Binding(ALT+COMMAND+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.edit.text.java.rename.element"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-08-03 14:14:50.673
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+/Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home/bin/java
+-cp
+/Users/andbardii/eclipse/jee-2022-12/Eclipse.app/Contents/Eclipse/../../../../../.p2/pool/plugins/org.springframework.tooling.boot.ls_1.47.0.202306150731/servers/spring-boot-language-server/BOOT-INF/classes:/Users/andbardii/eclipse/jee-2022-12/Eclipse.app/Contents/Eclipse/../../../../../.p2/pool/plugins/org.springframework.tooling.boot.ls_1.47.0.202306150731/servers/spring-boot-language-server/BOOT-INF/lib/*
+-Dsts.lsp.client=eclipse
+-Dlsp.completions.indentation.enable=true
+-Xmx1024m
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:/Users/andbardii/eclipse/jee-2022-12/Eclipse.app/Contents/Eclipse/../../../../../.p2/pool/plugins/org.springframework.tooling.boot.ls_1.47.0.202306150731/servers/spring-boot-language-server/BOOT-INF/classes/application.properties
+-XX:ErrorFile=/Users/andbardii/eclipse-workspace/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1691064890673
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-03 14:14:50.674
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-08-03 14:14:50.699
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 42138
+
+!ENTRY org.eclipse.lsp4e 4 0 2023-08-03 14:14:50.731
+!MESSAGE org.springframework.ide.vscode.commons.protocol.spring.SpringModelLanguageServer cannot be found by org.springframework.tooling.boot.ls_1.47.0.202306150731
+!STACK 0
+java.lang.ClassNotFoundException: org.springframework.ide.vscode.commons.protocol.spring.SpringModelLanguageServer cannot be found by org.springframework.tooling.boot.ls_1.47.0.202306150731
+	at org.eclipse.osgi.internal.loader.BundleLoader.generateException(BundleLoader.java:541)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:536)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:416)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:168)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:622)
+	at org.eclipse.lsp4e.LanguageServersRegistry$ExtensionLanguageServerDefinition.getServerInterface(LanguageServersRegistry.java:196)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$1(LanguageServerWrapper.java:288)
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:787)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-03 14:14:52.318
+!MESSAGE Boot project ADDED: about
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-03 14:14:52.319
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-03 14:14:52.320
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-03 14:14:52.326
+!MESSAGE Boot project ADDED: cowork
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-03 14:14:52.330
+!MESSAGE Boot project ADDED: coworking
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-03 14:14:52.334
+!MESSAGE Boot project ADDED: gestione
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-03 14:14:52.341
+!MESSAGE Boot project ADDED: gestioneristorante
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-03 14:14:52.349
+!MESSAGE Boot project ADDED: springfirst
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-03 14:14:52.350
+!MESSAGE Boot project ADDED: worktest
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-03 14:24:46.307
+!MESSAGE Classpath changed for project: securitytest
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-03 14:24:46.308
+!MESSAGE Boot project ADDED: securitytest
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-03 14:24:46.631
+!MESSAGE Classpath changed for project: securitytest
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-03 14:24:47.369
+!MESSAGE Classpath changed for project: securitytest
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-03 14:33:13.287
+!MESSAGE Classpath changed for project: securitytest
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-03 14:35:07.743
+!MESSAGE Classpath changed for project: securitytest
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-03 14:35:07.745
+!MESSAGE Boot project REMOVED: securitytest
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-03 14:36:40.822
+!MESSAGE Classpath changed for project: securitytest
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-03 14:36:40.822
+!MESSAGE Boot project ADDED: securitytest
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-03 14:36:41.531
+!MESSAGE Classpath changed for project: securitytest
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-03 14:36:42.724
+!MESSAGE Classpath changed for project: securitytest
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-03 14:36:42.869
+!MESSAGE Classpath changed for project: securitytest
+
+!ENTRY org.eclipse.jface 2 0 2023-08-03 14:36:50.606
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-08-03 14:36:50.606
+!MESSAGE A conflict occurred for COMMAND+SHIFT+C:
+Binding(COMMAND+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.tm4e.languageconfiguration.toggleLineCommentCommand,Toggle Line Comment,
+		,
+		Category(org.eclipse.tm4e.languageconfiguration.category,TM4E Language Configuration,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.tm4e.languageconfiguration.toggleLineCommentCommand"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+Binding(COMMAND+SHIFT+C,
+	ParameterizedCommand(Command(org.springframework.tooling.boot.ls.ToggleComment,Toggle Comment,
+		,
+		Category(org.springframework.ide.eclipse.commands,Spring Generic Text Editor,Spring Language Server Commands,true),
+		WorkbenchHandlerServiceHandler("org.springframework.tooling.boot.ls.ToggleComment"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-03 14:38:46.777
+!MESSAGE Classpath changed for project: securitytest
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-03 14:38:48.039
+!MESSAGE Classpath changed for project: securitytest
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-03 14:38:48.243
+!MESSAGE Classpath changed for project: securitytest
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-03 14:41:56.119
+!MESSAGE Classpath changed for project: securitytest
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-03 14:43:04.810
+!MESSAGE Classpath changed for project: securitytest
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-03 14:43:05.279
+!MESSAGE Classpath changed for project: securitytest
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-08-03 14:44:32.307
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-08-03 14:44:42.217
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-08-03 14:44:55.345
+!MESSAGE Timeout waiting for data to generate LS hover
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-03 14:45:19.918
+!MESSAGE Classpath changed for project: securitytest
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-08-03 14:46:00.978
+!MESSAGE Timeout waiting for data to generate LS hover
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-08-03 14:46:07.517
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-03 14:46:12.237
+!MESSAGE Classpath changed for project: securitytest
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-03 14:46:39.055
+!MESSAGE Classpath changed for project: securitytest
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-03 14:46:54.796
+!MESSAGE Classpath changed for project: securitytest
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-03 14:47:05.471
+!MESSAGE Classpath changed for project: securitytest
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-03 14:47:10.475
+!MESSAGE Classpath changed for project: securitytest
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-03 14:47:53.193
+!MESSAGE Classpath changed for project: securitytest
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-08-03 14:48:03.368
+!MESSAGE Timeout waiting for data to generate LS hover
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-08-03 14:48:09.575
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-03 14:48:11.159
+!MESSAGE Classpath changed for project: securitytest
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-03 14:48:19.592
+!MESSAGE Classpath changed for project: securitytest
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-03 14:48:25.701
+!MESSAGE Classpath changed for project: securitytest
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-03 14:48:40.673
+!MESSAGE Classpath changed for project: securitytest
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-03 14:49:01.521
+!MESSAGE Classpath changed for project: securitytest
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-03 14:49:02.559
+!MESSAGE Classpath changed for project: securitytest
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-03 14:49:05.637
+!MESSAGE Classpath changed for project: securitytest
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-08-03 14:49:31.878
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-08-03 14:49:41.563
+!MESSAGE Timeout waiting for data to generate LS hover
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-03 14:50:11.474
+!MESSAGE Classpath changed for project: securitytest
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-03 14:50:20.144
+!MESSAGE Classpath changed for project: securitytest
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-08-03 14:50:31.130
+!MESSAGE Timeout waiting for data to generate LS hover
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-08-03 14:50:36.858
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-03 14:50:52.376
+!MESSAGE Classpath changed for project: securitytest
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-03 14:51:45.477
+!MESSAGE Classpath changed for project: securitytest
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-08-03 14:52:02.283
+!MESSAGE Timeout waiting for data to generate LS hover
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-03 14:52:28.644
+!MESSAGE Classpath changed for project: securitytest
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-03 14:53:07.479
+!MESSAGE Classpath changed for project: securitytest
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-03 14:53:20.961
+!MESSAGE Classpath changed for project: securitytest
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-03 14:53:27.458
+!MESSAGE Classpath changed for project: securitytest
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-03 14:53:35.735
+!MESSAGE Classpath changed for project: securitytest
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-03 14:53:47.829
+!MESSAGE Classpath changed for project: securitytest
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-03 14:54:23.273
+!MESSAGE Classpath changed for project: securitytest
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-03 14:54:34.998
+!MESSAGE Classpath changed for project: securitytest
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-03 14:54:39.202
+!MESSAGE Classpath changed for project: securitytest
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-03 14:55:07.157
+!MESSAGE Classpath changed for project: securitytest
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-03 15:48:03.105
+!MESSAGE Classpath changed for project: securitytest
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-03 15:53:02.803
+!MESSAGE Classpath changed for project: securitytest
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-03 15:53:19.844
+!MESSAGE Classpath changed for project: securitytest
