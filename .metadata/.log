@@ -5928,3 +5928,858 @@ java.util.concurrent.TimeoutException
 
 !ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-03 15:53:19.844
 !MESSAGE Classpath changed for project: securitytest
+!SESSION 2023-08-04 10:42:48.577 -----------------------------------------------
+eclipse.buildId=4.26.0.20221201-1200
+java.version=17.0.7
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=it_IT
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/andbardii/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -keyring /Users/andbardii/.eclipse_keyring
+
+!ENTRY org.eclipse.jface 2 0 2023-08-04 10:42:54.074
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-08-04 10:42:54.074
+!MESSAGE A conflict occurred for COMMAND+SHIFT+T:
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-08-04 10:42:54.074
+!MESSAGE A conflict occurred for ALT+COMMAND+R:
+Binding(ALT+COMMAND+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.ui.edit.rename"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+Binding(ALT+COMMAND+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.edit.text.java.rename.element"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-08-04 10:42:57.754
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+/Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home/bin/java
+-cp
+/Users/andbardii/eclipse/jee-2022-12/Eclipse.app/Contents/Eclipse/../../../../../.p2/pool/plugins/org.springframework.tooling.boot.ls_1.47.0.202306150731/servers/spring-boot-language-server/BOOT-INF/classes:/Users/andbardii/eclipse/jee-2022-12/Eclipse.app/Contents/Eclipse/../../../../../.p2/pool/plugins/org.springframework.tooling.boot.ls_1.47.0.202306150731/servers/spring-boot-language-server/BOOT-INF/lib/*
+-Dsts.lsp.client=eclipse
+-Dlsp.completions.indentation.enable=true
+-Xmx1024m
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:/Users/andbardii/eclipse/jee-2022-12/Eclipse.app/Contents/Eclipse/../../../../../.p2/pool/plugins/org.springframework.tooling.boot.ls_1.47.0.202306150731/servers/spring-boot-language-server/BOOT-INF/classes/application.properties
+-XX:ErrorFile=/Users/andbardii/eclipse-workspace/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1691138577754
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 10:42:57.755
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-08-04 10:42:57.786
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 52483
+
+!ENTRY org.eclipse.lsp4e 4 0 2023-08-04 10:42:57.816
+!MESSAGE org.springframework.ide.vscode.commons.protocol.spring.SpringModelLanguageServer cannot be found by org.springframework.tooling.boot.ls_1.47.0.202306150731
+!STACK 0
+java.lang.ClassNotFoundException: org.springframework.ide.vscode.commons.protocol.spring.SpringModelLanguageServer cannot be found by org.springframework.tooling.boot.ls_1.47.0.202306150731
+	at org.eclipse.osgi.internal.loader.BundleLoader.generateException(BundleLoader.java:541)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:536)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:416)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:168)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:622)
+	at org.eclipse.lsp4e.LanguageServersRegistry$ExtensionLanguageServerDefinition.getServerInterface(LanguageServersRegistry.java:196)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$1(LanguageServerWrapper.java:288)
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:787)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 10:42:58.731
+!MESSAGE Boot project ADDED: about
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 10:42:58.732
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 10:42:58.733
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 10:42:58.740
+!MESSAGE Boot project ADDED: cowork
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 10:42:58.746
+!MESSAGE Boot project ADDED: coworking
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 10:42:58.749
+!MESSAGE Boot project ADDED: gestione
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 10:42:58.757
+!MESSAGE Boot project ADDED: gestioneristorante
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 10:42:58.763
+!MESSAGE Boot project ADDED: securitytest
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 10:42:58.766
+!MESSAGE Boot project ADDED: springfirst
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 10:42:58.771
+!MESSAGE Boot project ADDED: worktest
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 10:59:05.680
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 10:59:05.680
+!MESSAGE Boot project ADDED: devicehandler
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2023-08-04 10:59:05.701
+!MESSAGE .apt_generated_tests [in devicehandler] is not on its project's build path
+!STACK 1
+Java Model Exception: Error in Java Model (code 1006): .apt_generated_tests [in devicehandler] is not on its project's build path
+	at org.eclipse.jdt.internal.core.JavaElement.newJavaModelException(JavaElement.java:584)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:254)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:597)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:328)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:314)
+	at org.eclipse.jdt.internal.core.PackageFragmentRoot.getKind(PackageFragmentRoot.java:530)
+	at org.eclipse.jdt.internal.core.JavaProject.buildStructure(JavaProject.java:543)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:266)
+	at org.eclipse.jdt.internal.core.Openable.openAncestors(Openable.java:528)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:248)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:597)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:328)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:314)
+	at org.eclipse.jdt.internal.core.JavaElement.getChildren(JavaElement.java:269)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ClasspathUtil.createCpes(ClasspathUtil.java:143)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ClasspathUtil.resolve(ClasspathUtil.java:87)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:130)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1006 2023-08-04 10:59:05.702
+!MESSAGE .apt_generated_tests [in devicehandler] is not on its project's build path
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 10:59:06.565
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 10:59:07.513
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.eclipse.jface 2 0 2023-08-04 10:59:23.963
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-08-04 10:59:23.963
+!MESSAGE A conflict occurred for COMMAND+SHIFT+C:
+Binding(COMMAND+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.tm4e.languageconfiguration.toggleLineCommentCommand,Toggle Line Comment,
+		,
+		Category(org.eclipse.tm4e.languageconfiguration.category,TM4E Language Configuration,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.tm4e.languageconfiguration.toggleLineCommentCommand"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+Binding(COMMAND+SHIFT+C,
+	ParameterizedCommand(Command(org.springframework.tooling.boot.ls.ToggleComment,Toggle Comment,
+		,
+		Category(org.springframework.ide.eclipse.commands,Spring Generic Text Editor,Spring Language Server Commands,true),
+		WorkbenchHandlerServiceHandler("org.springframework.tooling.boot.ls.ToggleComment"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 11:01:50.508
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 11:01:50.724
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 11:03:38.031
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 11:03:39.130
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 11:05:28.312
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 11:06:32.728
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-08-04 11:06:53.656
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 11:06:57.733
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-08-04 11:06:58.034
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-08-04 11:07:05.365
+!MESSAGE Timeout waiting for data to generate LS hover
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 11:07:09.542
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 11:07:19.984
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 11:07:27.488
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-08-04 11:07:33.354
+!MESSAGE Timeout waiting for data to generate LS hover
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 11:07:40.400
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 11:07:51.522
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 11:08:00.428
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 11:08:10.599
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 11:08:24.316
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 11:08:25.356
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 11:08:31.601
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 11:08:36.548
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 11:08:54.257
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 11:09:05.406
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-08-04 11:09:51.578
+!MESSAGE Timeout waiting for data to generate LS hover
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 11:10:04.159
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 11:10:18.763
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 11:10:25.879
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 11:10:35.397
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 11:10:44.842
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 11:10:59.778
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 11:11:30.801
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 11:12:55.618
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 11:13:14.811
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 11:16:00.587
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 11:16:39.620
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 11:16:49.201
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 11:17:11.048
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 11:19:58.855
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 11:20:08.545
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 11:20:13.657
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 11:20:21.051
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 11:25:22.080
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 11:25:51.822
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 11:26:03.457
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 11:29:58.738
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 11:30:14.009
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 11:32:42.788
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 11:32:56.769
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 11:34:18.565
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 11:34:44.724
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 11:36:06.561
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 11:36:41.629
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 11:37:14.981
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-08-04 11:37:44.347
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 11:38:35.714
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 11:38:40.279
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 11:40:26.451
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 11:40:51.622
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 11:43:58.726
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 11:44:03.032
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-08-04 11:44:44.126
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-08-04 11:45:22.874
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 11:45:58.809
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 11:47:11.739
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 11:47:38.534
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 11:47:50.343
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 11:48:39.965
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 11:51:06.753
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 11:51:10.966
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 11:51:33.022
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 11:51:41.012
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 11:51:44.309
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 11:56:13.296
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 11:56:31.927
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 11:57:00.706
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 12:05:44.864
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 12:06:04.219
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 12:06:15.440
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2023-08-04 12:06:44.016
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Error in Java Model (code 969): findById() [in DeviceService [in [Working copy] DeviceService.java [in com.app.devicehandler.security.service [in src/main/java [in devicehandler]]]]] does not exist
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:574)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:617)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:328)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:314)
+	at org.eclipse.jdt.internal.core.SourceRefElement.getSourceRange(SourceRefElement.java:233)
+	at org.eclipse.jdt.internal.core.Member.getJavadocRange(Member.java:301)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContentFromSource(JavadocContentAccess2.java:645)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:521)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo(JavadocHover.java:748)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.internalGetHoverInfo(JavadocHover.java:666)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo2(JavadocHover.java:658)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.lambda$0(LSJavaHoverProvider.java:63)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1796)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2023-08-04 12:06:44.016
+!MESSAGE findById() [in DeviceService [in [Working copy] DeviceService.java [in com.app.devicehandler.security.service [in src/main/java [in devicehandler]]]]] does not exist
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 12:08:00.622
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 12:10:03.041
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2023-08-04 12:10:50.655
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Error in Java Model (code 969): findByStatus(TypeOfDevice) [in DeviceService [in [Working copy] DeviceService.java [in com.app.devicehandler.security.service [in src/main/java [in devicehandler]]]]] does not exist
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:574)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:617)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:328)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:314)
+	at org.eclipse.jdt.internal.core.SourceRefElement.getSourceRange(SourceRefElement.java:233)
+	at org.eclipse.jdt.internal.core.Member.getJavadocRange(Member.java:301)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContentFromSource(JavadocContentAccess2.java:645)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:521)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo(JavadocHover.java:748)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.internalGetHoverInfo(JavadocHover.java:666)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo2(JavadocHover.java:658)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.lambda$0(LSJavaHoverProvider.java:63)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1796)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2023-08-04 12:10:50.656
+!MESSAGE findByStatus(TypeOfDevice) [in DeviceService [in [Working copy] DeviceService.java [in com.app.devicehandler.security.service [in src/main/java [in devicehandler]]]]] does not exist
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 12:10:57.629
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2023-08-04 12:11:31.438
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Error in Java Model (code 969): findByStatus(TypeOfDevice) [in DeviceRepository [in [Working copy] DeviceRepository.java [in com.app.devicehandler.security.repository [in src/main/java [in devicehandler]]]]] does not exist
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:574)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:617)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:328)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:314)
+	at org.eclipse.jdt.internal.core.SourceRefElement.getSourceRange(SourceRefElement.java:233)
+	at org.eclipse.jdt.internal.core.Member.getJavadocRange(Member.java:301)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContentFromSource(JavadocContentAccess2.java:645)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:521)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo(JavadocHover.java:748)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.internalGetHoverInfo(JavadocHover.java:666)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo2(JavadocHover.java:658)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.lambda$0(LSJavaHoverProvider.java:63)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1796)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2023-08-04 12:11:31.438
+!MESSAGE findByStatus(TypeOfDevice) [in DeviceRepository [in [Working copy] DeviceRepository.java [in com.app.devicehandler.security.repository [in src/main/java [in devicehandler]]]]] does not exist
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 12:11:43.724
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 12:11:48.256
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-08-04 12:12:01.102
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-08-04 12:12:13.072
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 12:12:15.655
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 12:15:26.208
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 12:28:59.425
+!MESSAGE Classpath changed for project: about
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 12:29:26.599
+!MESSAGE Classpath changed for project: about
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 12:29:30.705
+!MESSAGE Classpath changed for project: about
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 12:29:44.675
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 12:29:46.718
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 12:33:38.005
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 12:33:47.139
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 12:34:05.883
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 12:34:44.619
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 12:35:03.629
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 12:42:11.168
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 12:42:35.139
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 12:44:27.444
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 12:46:51.163
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 12:55:21.436
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 12:55:27.913
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 12:57:25.103
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 12:58:18.767
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 13:18:36.226
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 13:22:47.220
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 13:23:12.033
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 13:28:33.705
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 13:38:43.783
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-08-04 13:41:39.757
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 13:44:32.418
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-08-04 13:50:17.535
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 13:57:35.929
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 13:59:57.151
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 14:00:08.203
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 14:00:26.786
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 14:03:20.151
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 14:15:59.696
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 14:20:14.048
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 14:21:16.832
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 14:21:32.692
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 14:21:38.209
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 14:21:40.432
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 14:25:34.164
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 14:35:07.090
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 14:59:39.032
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 15:00:32.918
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 15:02:12.209
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 15:02:59.509
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 15:04:02.767
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 15:04:31.527
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 15:04:47.916
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 15:05:29.817
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 15:06:58.310
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 15:07:32.560
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 15:08:53.229
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 15:10:32.204
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-08-04 15:11:13.246
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 15:11:57.253
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 15:13:48.969
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 15:14:09.639
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 15:27:03.134
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 15:28:22.418
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 15:28:31.798
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 15:28:35.944
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 15:28:41.547
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 15:28:49.856
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 15:29:46.331
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 15:31:56.026
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 15:32:21.863
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 15:32:35.995
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 15:33:07.824
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 15:33:30.043
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 15:33:41.931
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 15:34:04.204
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 15:34:30.283
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 15:34:55.953
+!MESSAGE Classpath changed for project: devicehandler
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 15:35:11.947
+!MESSAGE Classpath changed for project: devicehandler
