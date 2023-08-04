@@ -78,7 +78,7 @@ public class DeviceService {
 		return l;
 	}
 	
-	// SPECIAL METHODS
+	// EDIT METHODS
 	public Device assignDevice(long id, TypeOfDevice type) {
 		User u = useSvc.findById(id);
 		List<Device> l = devRepo.findByDevTypeAndStatus(type, TypeOfStatus.AVAILABLE);

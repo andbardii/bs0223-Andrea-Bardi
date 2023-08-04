@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.app.devicehandler.security.entity.Device;
 import com.app.devicehandler.security.entity.TypeOfDevice;
+import com.app.devicehandler.security.entity.TypeOfStatus;
 import com.app.devicehandler.security.service.DeviceService;
 
 @RestController
@@ -33,6 +34,14 @@ public class DeviceController {
 		return resp;
 	}
 	
+	@GetMapping("/status")
+	@PreAuthorize("isAuthenticated()")
+	public ResponseEntity<?> findByStatus(@RequestBody TypeOfStatus status) {
+		List<Device> list = devSvc.findByStatus(status);
+		ResponseEntity<List<Device>> resp = new ResponseEntity<List<Device>>(list, HttpStatus.OK);
+		return resp;
+	}
+	
 	@GetMapping("/{id}")
 	@PreAuthorize("isAuthenticated()")
 	public ResponseEntity<?> findById(@PathVariable Long id) {
@@ -43,31 +52,45 @@ public class DeviceController {
 	
 	// POST API METHODS
 	@PostMapping
-	@PreAuthorize("isAuthenticated()")
-	public ResponseEntity<?> addDevice(@RequestBody Device device) {
-		Device d = devSvc.addDevice(device.getDevType());
+	@PreAuthorize("hasRole('MODERATOR') or hasRole('ADMIN')")
+	public ResponseEntity<?> addDevice(@RequestBody TypeOfDevice devType) {
+		Device d = devSvc.addDevice(devType);
 		return new ResponseEntity<Device>(d, HttpStatus.CREATED);
 	}
 	
 	// PUT API METHODS
 	@PutMapping("/smartphone/{id}")
-	@PreAuthorize("isAuthenticated()")
-	public ResponseEntity<?> assignSmartphone(@PathVariable Long id, @RequestBody Device device) {
+	@PreAuthorize("hasRole('MODERATOR') or hasRole('ADMIN')")
+	public ResponseEntity<?> assignSmartphone(@PathVariable Long id) {
 		Device d = devSvc.assignDevice(id, TypeOfDevice.SMARTPHONE);
 		return new ResponseEntity<Device>(d, HttpStatus.OK);
 	}
 	
 	@PutMapping("/tablet/{id}")
-	@PreAuthorize("isAuthenticated()")
-	public ResponseEntity<?> assignTablet(@PathVariable Long id, @RequestBody Device device) {
+	@PreAuthorize("hasRole('MODERATOR') or hasRole('ADMIN')")
+	public ResponseEntity<?> assignTablet(@PathVariable Long id) {
 		Device d = devSvc.assignDevice(id, TypeOfDevice.TABLET);
 		return new ResponseEntity<Device>(d, HttpStatus.OK);
 	}
 	
 	@PutMapping("/laptop/{id}")
-	@PreAuthorize("isAuthenticated()")
-	public ResponseEntity<?> assignLaptop(@PathVariable Long id, @RequestBody Device device) {
+	@PreAuthorize("hasRole('MODERATOR') or hasRole('ADMIN')")
+	public ResponseEntity<?> assignLaptop(@PathVariable Long id) {
 		Device d = devSvc.assignDevice(id, TypeOfDevice.LAPTOP);
+		return new ResponseEntity<Device>(d, HttpStatus.OK);
+	}
+	
+	@PutMapping("/disuse/{id}")
+	@PreAuthorize("hasRole('ADMIN')")
+	public ResponseEntity<?> disuseDevice(@PathVariable Long id) {
+		Device d = devSvc.disuseDevice(id);
+		return new ResponseEntity<Device>(d, HttpStatus.OK);
+	}
+	
+	@PutMapping("/toggle/{id}")
+	@PreAuthorize("hasRole('MODERATOR') or hasRole('ADMIN')")
+	public ResponseEntity<?> toggleDevice(@PathVariable Long id) {
+		Device d = devSvc.toggleMaintenance(id);
 		return new ResponseEntity<Device>(d, HttpStatus.OK);
 	}
 	
