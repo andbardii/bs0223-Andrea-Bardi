@@ -1,4 +1,4 @@
-const url = 'http://localhost:8080/api/auth';
+const url = 'http://localhost:8080/api/auth/login';
 
 document.addEventListener("DOMContentLoaded", () => {
     const loginBtn = document.querySelector("#loginForm button");
@@ -18,11 +18,16 @@ const login = () => {
 
     console.log(obj); 
    
-    fetch(url+'/login', {
+    fetch(url, {
         method: 'POST',
         headers: {'Content-type': 'application/json; charset=UTF-8'},
         body: JSON.stringify(obj)
-    }).then(response => response)
+    }).then(response => response.json()).then(data => {
+        localStorage.setItem('user', JSON.stringify(data));
+        window.location.href = "home.html";
+    }).catch(error => {
+        console.error(error);
+    });
 
 
 }

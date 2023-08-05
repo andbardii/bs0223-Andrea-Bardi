@@ -1,4 +1,4 @@
-const url = 'http://localhost:8080/api/auth';
+const url = 'http://localhost:8080/api/auth/register';
 
 document.addEventListener("DOMContentLoaded", () => {
     const registerBtn = document.querySelector("#registerForm button");
@@ -22,10 +22,14 @@ const register = () => {
 
     console.log(obj); 
    
-    fetch(url+'/register', {
+    fetch(url, {
         method: 'POST',
         headers: {'Content-type': 'application/json; charset=UTF-8'},
         body: JSON.stringify(obj)
-    }).then(response => console.log(response))
+    }).then(response => {
+        window.location.href = "login.html";
+    }).catch(error => {
+        console.error(error);
+    });
 
 }
