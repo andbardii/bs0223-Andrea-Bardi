@@ -31,9 +31,6 @@ public class Centro implements Observer{
 	@ManyToMany
 	private List<Sonda> sonde;
 	
-	@ManyToMany
-	private List<Segnale> segnalazioni;
-	
 	@Override
     public void update(Observable o, Object arg) {
         if (arg instanceof Segnale) {

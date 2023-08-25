@@ -1,6 +1,7 @@
 package com.app.gestioneincendi.model;
 
 import java.time.LocalDate;
+import java.util.List;
 import java.util.Observable;
 import java.util.Random;
 import java.util.concurrent.Executors;
@@ -16,6 +17,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.ManyToMany;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -38,6 +40,4 @@ public class Sonda {
 	private int longitudine;
 	private int livellofumo;
 	
-	
-
 }

@@ -10,9 +10,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
+import com.app.gestioneincendi.model.Centro;
 import com.app.gestioneincendi.model.Segnale;
 import com.app.gestioneincendi.model.Sonda;
 import com.app.gestioneincendi.repository.SegnaliRepository;
+import com.app.gestioneincendi.repository.SondeRepository;
+
+import jakarta.transaction.Transactional;
 
 @Service
 public class SegnaleService {
@@ -20,6 +24,7 @@ public class SegnaleService {
 	Logger log = LoggerFactory.getLogger(SegnaleService.class);
 	
 	@Autowired SegnaliRepository DAO;
+	@Autowired SondeRepository sondaRepo;
 	
 	@Autowired @Qualifier("segnale") private ObjectProvider<Segnale> provider;
 
@@ -31,7 +36,7 @@ public class SegnaleService {
 		s.setData(LocalDate.now());
 		s.setLivellofumo(sonda.getLivellofumo());
 		DAO.save(s);
-		log.info("**********");
+		log.info("Segnale inviato!");
 		return s;
 	}
 

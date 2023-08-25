@@ -19,12 +19,13 @@ import org.springframework.stereotype.Service;
 
 import com.app.gestioneincendi.model.Sonda;
 import com.app.gestioneincendi.model.Centro;
+import com.app.gestioneincendi.model.Segnale;
 import com.app.gestioneincendi.repository.SondeRepository;
 
 import jakarta.transaction.Transactional;
 
 @Service
-public class SondaService extends Observable{
+public class SondaService {
 	
 	Logger log = LoggerFactory.getLogger(SondaService.class);
 	
@@ -69,12 +70,10 @@ public class SondaService extends Observable{
 		s.setLongitudine(longitudine);
 		s.setLivellofumo(livelloFumo);
 		DAO.save(s);
-		log.info("Sonda " + id + " Aggiornata!" );
+		log.info("Sonda " + id + " Aggiornata!");
 		if(livelloFumo > 5) {
 			log.info("Segnale in preparazione...");
 			SegnaleSVC.addSegnale(s);
-			setChanged();
-            notifyObservers(s);
 			return s;
 		}else {
 			return s;
