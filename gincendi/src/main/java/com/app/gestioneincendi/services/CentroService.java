@@ -27,14 +27,14 @@ public class CentroService {
 			
 		Centro c = provider.getObject();
 		DAO.save(c);
-		log.info("Centro Aggiunto: " + c.toString());
+		log.info("Centro " + c.getId() + " Aggiunto!");
 		return c;
 	}
 
 	// GET METHODS
 	public Centro findById(long id) {
 		Centro c = DAO.findById(id).get();
-		log.info("Centro Trovato: " + c.toString());
+		log.info("Centro " + c.getId());
 		log.info(c.toString());
 		return c;
 	}
@@ -50,7 +50,7 @@ public class CentroService {
 	
 	public Centro toggleSonde(Centro c) {
 		DAO.save(c);
-		log.info("Centro Aggiornato: " + c.toString());
+		log.info("Centro " + c.getId() + " Aggiornato");
 		return c;
 	}
 }

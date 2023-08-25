@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="lombok.Data"/>
-    <fullyQualifiedTypeName name="jakarta.persistence.Enumerated"/>
-    <fullyQualifiedTypeName name="jakarta.persistence.EnumType"/>
-    <fullyQualifiedTypeName name="lombok.NoArgsConstructor"/>
     <fullyQualifiedTypeName name="com.app.devicehandler.security.repository.DeviceRepository"/>
     <fullyQualifiedTypeName name="com.app.devicehandler.security.entity.Smartphone"/>
     <fullyQualifiedTypeName name="com.app.devicehandler.security.entity.Tablet"/>
@@ -60,4 +56,8 @@
     <fullyQualifiedTypeName name="com.app.gestioneincendi.services.CentroService"/>
     <fullyQualifiedTypeName name="com.app.gestioneincendi.model.Sonda"/>
     <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
+    <fullyQualifiedTypeName name="jakarta.transaction.Transactional"/>
+    <fullyQualifiedTypeName name="org.springframework.scheduling.annotation.Scheduled"/>
+    <fullyQualifiedTypeName name="org.springframework.scheduling.annotation.EnableScheduling"/>
+    <fullyQualifiedTypeName name="org.springframework.scheduling.annotation.Async"/>
 </qualifiedTypeNameHistroy>

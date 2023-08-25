@@ -21,7 +21,7 @@ import lombok.NoArgsConstructor;
 @Data
 @Entity
 @Table(name = "centri")
-public class Centro {
+public class Centro implements Observer{
 
 
 	@Id
@@ -33,4 +33,12 @@ public class Centro {
 	
 	@ManyToMany
 	private List<Segnale> segnalazioni;
+	
+	@Override
+    public void update(Observable o, Object arg) {
+        if (arg instanceof Segnale) {
+            Segnale segnale = (Segnale) arg;
+            // Gestisci il segnale ricevuto dal Centro
+        }
+    }
 }

@@ -21,27 +21,24 @@ public class SegnaleService {
 	
 	@Autowired SegnaliRepository DAO;
 	
-	@Autowired SondaService SondaSVC;
-	
 	@Autowired @Qualifier("segnale") private ObjectProvider<Segnale> provider;
 
 	// POST METHODS
-	public Segnale addSegnale(long id) {
-		Sonda sonda = SondaSVC.findById(id);
+	public Segnale addSegnale(Sonda sonda) {
 		Segnale s = provider.getObject();
 		s.setLongitudine(sonda.getLongitudine());
 		s.setLatitudine(sonda.getLatitudine());
 		s.setData(LocalDate.now());
 		s.setLivellofumo(sonda.getLivellofumo());
 		DAO.save(s);
-		log.info("***** Operazione Completata *****");
+		log.info("**********");
 		return s;
 	}
 
 	// GET METHODS
 	public Segnale findById(long id) {
 		Segnale s = DAO.findById(id).get();
-		log.info("Segnale Trovato: " + s.toString());
+		log.info("Segnale " + s.getId());
 		log.info(s.toString());
 		return s;
 	}
