@@ -6,4 +6,5 @@ import com.app.gestioneincendi.model.Sonda;
 
 public interface SondeRepository  extends JpaRepository<Sonda, Long>{
 
+	public Sonda findByLatitudineAndLongitudine(int longitudine, int latitudine);
 }

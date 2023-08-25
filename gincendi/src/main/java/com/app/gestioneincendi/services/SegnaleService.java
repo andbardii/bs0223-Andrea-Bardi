@@ -1,5 +1,6 @@
 package com.app.gestioneincendi.services;
 
+import java.time.LocalDate;
 import java.util.List;
 
 import org.slf4j.Logger;
@@ -7,24 +8,33 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.ObjectProvider;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Service;
 
 import com.app.gestioneincendi.model.Segnale;
+import com.app.gestioneincendi.model.Sonda;
 import com.app.gestioneincendi.repository.SegnaliRepository;
 
+@Service
 public class SegnaleService {
 
 	Logger log = LoggerFactory.getLogger(SegnaleService.class);
 	
 	@Autowired SegnaliRepository DAO;
 	
+	@Autowired SondaService SondaSVC;
+	
 	@Autowired @Qualifier("segnale") private ObjectProvider<Segnale> provider;
 
 	// POST METHODS
-	public Segnale addSegnale(String question) {
-				
+	public Segnale addSegnale(long id) {
+		Sonda sonda = SondaSVC.findById(id);
 		Segnale s = provider.getObject();
+		s.setLongitudine(sonda.getLongitudine());
+		s.setLatitudine(sonda.getLatitudine());
+		s.setData(LocalDate.now());
+		s.setLivellofumo(sonda.getLivellofumo());
 		DAO.save(s);
-		log.info("Segnale Aggiunto: " + s.toString());
+		log.info("***** Operazione Completata *****");
 		return s;
 	}
 

@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import com.app.gestioneincendi.model.Centro;
+import com.app.gestioneincendi.model.Sonda;
 import com.app.gestioneincendi.repository.CentriRepository;
 
 @Service
@@ -22,7 +23,7 @@ public class CentroService {
 	@Autowired @Qualifier("centro") private ObjectProvider<Centro> provider;
 
 	// POST METHODS
-	public Centro addCentro(String question) {
+	public Centro addCentro() {
 			
 		Centro c = provider.getObject();
 		DAO.save(c);
@@ -43,5 +44,13 @@ public class CentroService {
 		log.info("Centri Trovati: ");
 		l.forEach(c -> log.info(c.toString()));
 		return l;
+	}
+	
+	// PUT METHODS
+	
+	public Centro toggleSonde(Centro c) {
+		DAO.save(c);
+		log.info("Centro Aggiornato: " + c.toString());
+		return c;
 	}
 }

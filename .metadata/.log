@@ -9166,3 +9166,138 @@ java.lang.InterruptedException
 
 !ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-25 14:45:18.265
 !MESSAGE Classpath changed for project: gestioneincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-25 14:55:19.918
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-25 14:55:49.925
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-25 14:56:05.021
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-25 14:59:43.891
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-25 15:02:53.327
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-08-25 15:24:14.969
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-25 15:25:33.165
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-25 15:31:58.901
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-25 15:32:00.958
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-25 15:38:47.309
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-25 15:39:44.773
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-25 15:47:01.821
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-25 15:50:40.444
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-25 15:51:03.230
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-25 15:52:00.625
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-25 15:53:14.730
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-25 15:54:54.255
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-25 15:55:35.016
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-25 15:55:38.089
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-08-25 15:59:52.304
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-08-25 16:00:31.371
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-25 16:03:17.373
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-25 16:05:11.998
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-25 16:05:50.495
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-25 16:09:58.782
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-25 16:10:06.505
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-25 16:12:41.137
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-25 16:13:30.808
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-25 16:13:52.244
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-25 16:15:28.576
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-25 16:19:27.464
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-25 16:19:31.667
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-25 16:21:18.695
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-25 16:23:59.592
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-25 16:24:16.691
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-25 16:25:28.696
+!MESSAGE Classpath changed for project: gincendi

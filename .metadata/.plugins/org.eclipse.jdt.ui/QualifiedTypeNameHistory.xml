@@ -1,22 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ControllerAdvice"/>
-    <fullyQualifiedTypeName name="jakarta.persistence.EntityNotFoundException"/>
-    <fullyQualifiedTypeName name="jakarta.persistence.EntityExistsException"/>
-    <fullyQualifiedTypeName name="org.springframework.boot.test.context.SpringBootTest"/>
-    <fullyQualifiedTypeName name="org.springframework.boot.test.web.client.TestRestTemplate"/>
-    <fullyQualifiedTypeName name="com.app.worktest.repository.PrenotazioneDAO"/>
-    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Qualifier"/>
-    <fullyQualifiedTypeName name="org.springframework.beans.factory.ObjectProvider"/>
-    <fullyQualifiedTypeName name="com.app.worktest.model.Prenotazione"/>
-    <fullyQualifiedTypeName name="org.junit.jupiter.api.Test"/>
-    <fullyQualifiedTypeName name="org.junit.jupiter.api.DisplayName"/>
-    <fullyQualifiedTypeName name="com.app.worktest.service.PostazioneService"/>
-    <fullyQualifiedTypeName name="com.app.about.service.UtenteService"/>
-    <fullyQualifiedTypeName name="java.time.LocalDate"/>
-    <fullyQualifiedTypeName name="org.springframework.http.HttpStatusCode"/>
-    <fullyQualifiedTypeName name="org.junit.jupiter.api.Disabled"/>
-    <fullyQualifiedTypeName name="com.epicode.Spring.security.security.JwtAuthenticationEntryPoint"/>
     <fullyQualifiedTypeName name="lombok.Data"/>
     <fullyQualifiedTypeName name="jakarta.persistence.Enumerated"/>
     <fullyQualifiedTypeName name="jakarta.persistence.EnumType"/>
@@ -49,8 +32,6 @@
     <fullyQualifiedTypeName name="org.apache.catalina.filters.CorsFilter"/>
     <fullyQualifiedTypeName name="org.springframework.web.cors.UrlBasedCorsConfigurationSource"/>
     <fullyQualifiedTypeName name="org.springframework.web.cors.CorsConfiguration"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
-    <fullyQualifiedTypeName name="jakarta.persistence.ManyToMany"/>
     <fullyQualifiedTypeName name="jakarta.persistence.OneToMany"/>
     <fullyQualifiedTypeName name="jakarta.persistence.ManyToOne"/>
     <fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
@@ -60,4 +41,23 @@
     <fullyQualifiedTypeName name="com.epicode.forum.security.entity.Post"/>
     <fullyQualifiedTypeName name="com.epicode.forum.security.entity.Answer"/>
     <fullyQualifiedTypeName name="com.epicode.forum.security.service.FService"/>
+    <fullyQualifiedTypeName name="java.util.Observer"/>
+    <fullyQualifiedTypeName name="java.util.Observable"/>
+    <fullyQualifiedTypeName name="com.app.gestioneincendi.security.entity.Sonda"/>
+    <fullyQualifiedTypeName name="com.app.gestioneincendi.security.repository.SondeRepository"/>
+    <fullyQualifiedTypeName name="com.app.gestioneincendi.security.repository.CentriRepository"/>
+    <fullyQualifiedTypeName name="com.app.gestioneincendi.security.entity.Centro"/>
+    <fullyQualifiedTypeName name="com.app.gestioneincendi.security.repository.SegnaliRepository"/>
+    <fullyQualifiedTypeName name="com.app.gestioneincendi.security.entity.Segnale"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.ManyToMany"/>
+    <fullyQualifiedTypeName name="java.time.LocalDate"/>
+    <fullyQualifiedTypeName name="java.util.concurrent.ScheduledExecutorService"/>
+    <fullyQualifiedTypeName name="java.util.concurrent.Executors"/>
+    <fullyQualifiedTypeName name="java.util.Random"/>
+    <fullyQualifiedTypeName name="java.util.concurrent.TimeUnit"/>
+    <fullyQualifiedTypeName name="com.app.gestioneincendi.services.SegnaleService"/>
+    <fullyQualifiedTypeName name="com.app.gestioneincendi.services.CentroService"/>
+    <fullyQualifiedTypeName name="com.app.gestioneincendi.model.Sonda"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
 </qualifiedTypeNameHistroy>

@@ -28,12 +28,9 @@ public class Centro {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
-	private String name;
-	
 	@ManyToMany
 	private List<Sonda> sonde;
+	
 	@ManyToMany
 	private List<Segnale> segnalazioni;
-	
-
 }
