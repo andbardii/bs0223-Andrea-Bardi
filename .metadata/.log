@@ -10431,3 +10431,502 @@ java.lang.Error: SWT Resource was not properly disposed
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-26 07:04:05.135
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-26 07:04:49.340
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-26 07:07:22.480
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-26 07:10:23.746
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-26 07:11:55.016
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-26 07:11:57.133
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-26 07:12:08.481
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-26 07:12:10.547
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-26 07:13:26.516
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-26 07:16:38.657
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-26 07:16:43.823
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-26 07:16:48.304
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.eclipse.ui.ide 4 4 2023-08-26 07:16:49.397
+!MESSAGE Not properly disposed SWT resource
+!STACK 0
+java.lang.Error: SWT Resource was not properly disposed
+	at org.eclipse.swt.graphics.Resource.initNonDisposeTracking(Resource.java:172)
+	at org.eclipse.swt.graphics.Resource.<init>(Resource.java:120)
+	at org.eclipse.swt.graphics.Font.<init>(Font.java:100)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$6.gesture(AbstractTextEditor.java:3856)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:152)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4646)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1524)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1547)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1532)
+	at org.eclipse.swt.widgets.Control.gestureEvent(Control.java:1533)
+	at org.eclipse.swt.widgets.Control.magnifyWithEvent(Control.java:2491)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:6654)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSendSuper(Native Method)
+	at org.eclipse.swt.widgets.Widget.callSuper(Widget.java:236)
+	at org.eclipse.swt.widgets.Widget.windowSendEvent(Widget.java:2264)
+	at org.eclipse.swt.widgets.Shell.windowSendEvent(Shell.java:2511)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:6444)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSendSuper(Native Method)
+	at org.eclipse.swt.widgets.Display.applicationSendEvent(Display.java:5692)
+	at org.eclipse.swt.widgets.Display.applicationProc(Display.java:5831)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSend(Native Method)
+	at org.eclipse.swt.internal.cocoa.NSApplication.sendEvent(NSApplication.java:117)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3986)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.ui.ide 4 4 2023-08-26 07:16:49.398
+!MESSAGE Not properly disposed SWT resource
+!STACK 0
+java.lang.Error: SWT Resource was not properly disposed
+	at org.eclipse.swt.graphics.Resource.initNonDisposeTracking(Resource.java:172)
+	at org.eclipse.swt.graphics.Resource.<init>(Resource.java:120)
+	at org.eclipse.swt.graphics.Font.<init>(Font.java:100)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$6.gesture(AbstractTextEditor.java:3856)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:152)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4646)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1524)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1547)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1532)
+	at org.eclipse.swt.widgets.Control.gestureEvent(Control.java:1533)
+	at org.eclipse.swt.widgets.Control.magnifyWithEvent(Control.java:2491)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:6654)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSendSuper(Native Method)
+	at org.eclipse.swt.widgets.Widget.callSuper(Widget.java:236)
+	at org.eclipse.swt.widgets.Widget.windowSendEvent(Widget.java:2264)
+	at org.eclipse.swt.widgets.Shell.windowSendEvent(Shell.java:2511)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:6444)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSendSuper(Native Method)
+	at org.eclipse.swt.widgets.Display.applicationSendEvent(Display.java:5692)
+	at org.eclipse.swt.widgets.Display.applicationProc(Display.java:5831)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSend(Native Method)
+	at org.eclipse.swt.internal.cocoa.NSApplication.sendEvent(NSApplication.java:117)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3986)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.ui.ide 4 4 2023-08-26 07:16:49.398
+!MESSAGE Not properly disposed SWT resource
+!STACK 0
+java.lang.Error: SWT Resource was not properly disposed
+	at org.eclipse.swt.graphics.Resource.initNonDisposeTracking(Resource.java:172)
+	at org.eclipse.swt.graphics.Resource.<init>(Resource.java:120)
+	at org.eclipse.swt.graphics.Font.<init>(Font.java:100)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$6.gesture(AbstractTextEditor.java:3856)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:152)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4646)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1524)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1547)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1532)
+	at org.eclipse.swt.widgets.Control.gestureEvent(Control.java:1533)
+	at org.eclipse.swt.widgets.Control.magnifyWithEvent(Control.java:2491)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:6654)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSendSuper(Native Method)
+	at org.eclipse.swt.widgets.Widget.callSuper(Widget.java:236)
+	at org.eclipse.swt.widgets.Widget.windowSendEvent(Widget.java:2264)
+	at org.eclipse.swt.widgets.Shell.windowSendEvent(Shell.java:2511)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:6444)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSendSuper(Native Method)
+	at org.eclipse.swt.widgets.Display.applicationSendEvent(Display.java:5692)
+	at org.eclipse.swt.widgets.Display.applicationProc(Display.java:5831)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSend(Native Method)
+	at org.eclipse.swt.internal.cocoa.NSApplication.sendEvent(NSApplication.java:117)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3986)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.ui.ide 4 4 2023-08-26 07:16:49.398
+!MESSAGE Not properly disposed SWT resource
+!STACK 0
+java.lang.Error: SWT Resource was not properly disposed
+	at org.eclipse.swt.graphics.Resource.initNonDisposeTracking(Resource.java:172)
+	at org.eclipse.swt.graphics.Resource.<init>(Resource.java:120)
+	at org.eclipse.swt.graphics.Font.<init>(Font.java:100)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$6.gesture(AbstractTextEditor.java:3856)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:152)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4646)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1524)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1547)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1532)
+	at org.eclipse.swt.widgets.Control.gestureEvent(Control.java:1533)
+	at org.eclipse.swt.widgets.Control.magnifyWithEvent(Control.java:2491)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:6654)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSendSuper(Native Method)
+	at org.eclipse.swt.widgets.Widget.callSuper(Widget.java:236)
+	at org.eclipse.swt.widgets.Widget.windowSendEvent(Widget.java:2264)
+	at org.eclipse.swt.widgets.Shell.windowSendEvent(Shell.java:2511)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:6444)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSendSuper(Native Method)
+	at org.eclipse.swt.widgets.Display.applicationSendEvent(Display.java:5692)
+	at org.eclipse.swt.widgets.Display.applicationProc(Display.java:5831)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSend(Native Method)
+	at org.eclipse.swt.internal.cocoa.NSApplication.sendEvent(NSApplication.java:117)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3986)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-26 07:17:20.527
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-26 07:18:54.193
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-26 07:19:26.357
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-26 07:20:31.231
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-26 07:21:08.198
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-26 07:23:00.569
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-26 07:23:16.321
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-26 07:24:48.046
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-26 07:25:01.203
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-26 07:25:08.087
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-26 07:25:14.606
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-26 07:25:41.290
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-26 07:26:18.398
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-26 07:56:13.336
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-26 07:57:16.824
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-26 07:59:36.065
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-26 08:00:27.211
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-26 08:00:51.161
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-26 08:01:36.187
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-26 08:03:42.467
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-26 08:03:50.109
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-26 08:03:53.230
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-26 08:03:58.297
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-26 08:14:00.440
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-26 08:15:16.655
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-26 08:16:06.273
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-26 08:18:46.759
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-26 08:19:17.730
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-26 08:19:31.503
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-26 08:19:51.374
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-26 08:21:57.767
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-08-26 08:25:22.920
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-26 08:26:54.699
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-26 08:28:53.354
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-08-26 08:29:53.610
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.util.concurrent.ExecutionException: java.lang.NullPointerException: Cannot store to object array because "this.types[this.typeid]" is null
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+Caused by: java.lang.NullPointerException: Cannot store to object array because "this.types[this.typeid]" is null
+	at org.eclipse.jdt.internal.compiler.lookup.TypeSystem.getArrayType(TypeSystem.java:298)
+	at org.eclipse.jdt.internal.compiler.lookup.AnnotatableTypeSystem.getArrayType(AnnotatableTypeSystem.java:95)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.getTypeFromSignature(LookupEnvironment.java:1916)
+	at org.eclipse.jdt.internal.compiler.lookup.BinaryTypeBinding.createMethod(BinaryTypeBinding.java:1018)
+	at org.eclipse.jdt.internal.compiler.lookup.BinaryTypeBinding.createMethods(BinaryTypeBinding.java:1211)
+	at org.eclipse.jdt.internal.compiler.lookup.BinaryTypeBinding.cachePartsFrom(BinaryTypeBinding.java:614)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.createBinaryTypeFrom(LookupEnvironment.java:1058)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.createBinaryTypeFrom(LookupEnvironment.java:1039)
+	at org.eclipse.jdt.internal.compiler.Compiler.accept(Compiler.java:308)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.askForType(LookupEnvironment.java:260)
+	at org.eclipse.jdt.internal.compiler.lookup.UnresolvedReferenceBinding.resolve(UnresolvedReferenceBinding.java:116)
+	at org.eclipse.jdt.internal.compiler.lookup.BinaryTypeBinding.resolveType(BinaryTypeBinding.java:249)
+	at org.eclipse.jdt.internal.compiler.lookup.UnresolvedAnnotationBinding.resolve(UnresolvedAnnotationBinding.java:31)
+	at org.eclipse.jdt.internal.compiler.lookup.UnresolvedAnnotationBinding.getAnnotationType(UnresolvedAnnotationBinding.java:41)
+	at org.eclipse.jdt.internal.compiler.lookup.AnnotationBinding.addStandardAnnotations(AnnotationBinding.java:47)
+	at org.eclipse.jdt.internal.compiler.lookup.BinaryTypeBinding.retrieveAnnotations(BinaryTypeBinding.java:1942)
+	at org.eclipse.jdt.internal.compiler.lookup.ReferenceBinding.getAnnotations(ReferenceBinding.java:1069)
+	at org.eclipse.jdt.core.dom.TypeBinding.getAnnotations(TypeBinding.java:122)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getAnnotations(JavadocHover.java:1177)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.addAnnotations(JavadocHover.java:1137)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo(JavadocHover.java:745)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.internalGetHoverInfo(JavadocHover.java:666)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo2(JavadocHover.java:658)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.lambda$0(LSJavaHoverProvider.java:63)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1796)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-26 08:29:53.867
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-26 08:30:26.838
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-26 08:30:39.781
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-26 08:30:54.936
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-26 08:31:25.289
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-26 08:31:36.732
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-26 08:32:11.326
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-26 08:32:55.082
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-26 08:33:00.704
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-26 08:33:17.570
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-26 08:33:28.870
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-26 08:35:37.736
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-26 08:35:40.874
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-08-26 08:36:56.733
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-26 08:39:53.385
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-26 08:41:24.090
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-26 08:43:31.848
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-26 08:44:20.339
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-26 08:45:22.255
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-26 08:46:27.726
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-26 08:47:31.080
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-26 08:47:47.079
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-26 08:47:58.557
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-26 08:48:14.077
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-26 08:48:24.100
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-26 08:48:35.869
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-26 08:49:01.191
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-26 08:49:14.191
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-26 08:49:25.214
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-26 08:49:36.187
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-26 08:50:00.028
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-26 08:50:08.031
+!MESSAGE Classpath changed for project: gincendi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-26 08:50:20.697
+!MESSAGE Classpath changed for project: gincendi

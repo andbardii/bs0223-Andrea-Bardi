@@ -1,25 +1,18 @@
 package com.app.gestioneincendi.services;
 
 import java.util.List;
-import java.util.Observable;
 import java.util.Random;
-import java.util.concurrent.Executors;
-import java.util.concurrent.ScheduledExecutorService;
-import java.util.concurrent.TimeUnit;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.ObjectProvider;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.scheduling.annotation.Async;
-import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 
 import com.app.gestioneincendi.model.Sonda;
 import com.app.gestioneincendi.model.Centro;
-import com.app.gestioneincendi.model.Segnale;
 import com.app.gestioneincendi.repository.SondeRepository;
 
 import jakarta.transaction.Transactional;
@@ -39,21 +32,28 @@ public class SondaService {
 	// POST METHODS
 	@Transactional
 	public Sonda addSonda(long id, int latitudine, int longitudine) {
+		log.info("Aggiungo Sonda al sistema...");
 		Sonda s = provider.getObject();
 		s.setLatitudine(latitudine);
 		s.setLongitudine(longitudine);
 		DAO.save(s);
 		addToCentro(s.getId(), id);
 		log.info("Sonda " + s.getId() + " Aggiunta!");
+		System.out.println();
 		return s;
 	}
 
 	// GET METHODS
 	public Sonda findById(long id) {
 		Sonda s = DAO.findById(id).get();
+		if (s.equals(null)) {
+			log.info("Errore...");
+			return null;
+		}else {
 		log.info("Sonda " + s.getId());
 		log.info(s.toString());
 		return s;
+		}
 	}
 	
 	public List<Sonda> findAll(){
@@ -65,17 +65,23 @@ public class SondaService {
 	
 	// PUT METHODS
 	public Sonda update(long id,int latitudine,int longitudine,int livelloFumo) {
+		log.info("Aggiornamento Sonda...");
 		Sonda s = findById(id);
+
 		s.setLatitudine(latitudine);
 		s.setLongitudine(longitudine);
 		s.setLivellofumo(livelloFumo);
 		DAO.save(s);
 		log.info("Sonda " + id + " Aggiornata!");
+		
 		if(livelloFumo > 5) {
 			log.info("Segnale in preparazione...");
 			SegnaleSVC.addSegnale(s);
+			System.out.println();
 			return s;
 		}else {
+			log.info("Livello di fumo Accettabile...");
+			System.out.println();
 			return s;
 		}
 		
@@ -97,7 +103,10 @@ public class SondaService {
         Random random = new Random();
         List<Sonda> l = (List<Sonda>)DAO.findAll();
         
-        long randomId = random.nextInt(l.size() + 1);
+        long randomId = random.nextLong(l.size());
+        if (randomId == 0) {
+        	randomId ++;
+        }
         int randomLatitudine = random.nextInt(90);
         int randomLongitudine = random.nextInt(180);
         int randomLivelloFumo = random.nextInt(10);
