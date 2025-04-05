@@ -55,14 +55,14 @@ public class JwtTokenProvider {
         String username = claims.getSubject();
         return username;
     }
-
+    
     // validate Jwt token
     public boolean validateToken(String token){
         try{
             Jwts.parserBuilder()
                     .setSigningKey(key())
                     .build()
-                    .parse(token);
+                    .parseClaimsJws(token);  // Usa parseClaimsJws invece di parse
             return true;
         } catch (MalformedJwtException ex) {
             throw new MyAPIException(HttpStatus.BAD_REQUEST, "Invalid JWT token");
